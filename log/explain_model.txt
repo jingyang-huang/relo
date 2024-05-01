@@ -1,0 +1,7 @@
+model-nclt 作者的nclt模型
+model-e20 自己数据集，采用根据坐标分割，20次
+model-e50 坐标分割，50次
+
+model-overfit 第二种数据分割方法，20次
+
+model-resume 继续训练时导入的权重

@@ -1,0 +1,6612 @@
+Namespace(batch_num_queries=16, dataset_folder='../../dataset/', decay_rate=0.7, decay_step=100000, learning_rate=1e-05, log_dir='log/', loss_function='quadruplet', loss_ignore_zero_batch=False, loss_not_lazy=False, margin_1=0.5, margin_2=0.2, max_epoch=20, momentum=0.9, negatives_per_query=18, optimizer='adam', positives_per_query=2, results_dir='results/', resume=False, triplet_use_best_positives=False)
+cfg.EXPERIMENT_NAME=occ
+cfg.NUM_POINTS=4096
+cfg.FEATURE_OUTPUT_DIM=1024
+cfg.RESULTS_FOLDER=results/
+cfg.OUTPUT_FILE=results/results.txt
+cfg.LOG_DIR=log/
+cfg.MODEL_FILENAME=model.ckpt
+cfg.BATCH_NUM_QUERIES=1
+cfg.TRAIN_POSITIVES_PER_QUERY=2
+cfg.TRAIN_NEGATIVES_PER_QUERY=18
+cfg.DECAY_STEP=100000
+cfg.DECAY_RATE=0.7
+cfg.BASE_LEARNING_RATE=1e-05
+cfg.MOMENTUM=0.9
+cfg.OPTIMIZER=adam
+cfg.MAX_EPOCH=20
+cfg.MARGIN_1=0.5
+cfg.MARGIN_2=0.2
+cfg.BN_INIT_DECAY=0.5
+cfg.BN_DECAY_DECAY_RATE=0.5
+cfg.BN_DECAY_CLIP=0.99
+cfg.RESUME=False
+cfg.DATA_TYPE=campus
+cfg.DATASET_FOLDER=../../dataset/
+cfg.TRAIN_FILE=./generating_queries/campus/training_queries_baseline_occ.pickle
+cfg.TEST_FILE=./generating_queries/campus/test_queries_baseline_occ.pickle
+cfg.TRAIN_FOLDER=/occ_0.5m/
+cfg.TEST_FOLDER=/occ_3m/
+cfg.SUBMAP_INTERVAL_TRAIN=0.2
+cfg.SUBMAP_INTERVAL_TEST=2.0
+cfg.num_ring=40
+cfg.num_sector=120
+cfg.num_height=20
+cfg.max_length=1
+cfg.max_height=1
+cfg.LOSS_FUNCTION=quadruplet
+cfg.LOSS_LAZY=False
+cfg.TRIPLET_USE_BEST_POSITIVES=False
+cfg.LOSS_IGNORE_ZERO_BATCH=False
+cfg.EVAL_BATCH_SIZE=1
+cfg.EVAL_POSITIVES_PER_QUERY=2
+cfg.EVAL_NEGATIVES_PER_QUERY=4
+cfg.EVAL_DATABASE_FILE=./generating_queries/campus/evaluation_database.pickle
+cfg.EVAL_QUERY_FILE=./generating_queries/campus/evaluation_query.pickle
+cfg.max_icp_iter=50
+cfg.icp_tolerance=0.001
+cfg.icp_max_distance=0.001
+cfg.icp_fitness_score=0.5
+cfg.MARGIN1=0.5
+cfg.MARGIN2=0.2
+
+**** EPOCH 000/ 20 ****
+----0 / 109-----
+batch loss: 125.426498
+batch yaw loss: 6.000000
+----1 / 109-----
+batch loss: 13.606678
+batch yaw loss: 2.500000
+----2 / 109-----
+batch loss: 76.446083
+batch yaw loss: 41.500000
+----3 / 109-----
+batch loss: 16.709576
+batch yaw loss: 5.500000
+----4 / 109-----
+batch loss: 21.726982
+batch yaw loss: 47.500000
+----5 / 109-----
+batch loss: 2.875317
+batch yaw loss: 8.500000
+----6 / 109-----
+batch loss: 5.257408
+batch yaw loss: 7.500000
+----7 / 109-----
+batch loss: 1.801125
+batch yaw loss: 1.000000
+----8 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----9 / 109-----
+batch loss: 0.626007
+batch yaw loss: 16.000000
+----10 / 109-----
+batch loss: 25.451157
+batch yaw loss: 13.500000
+----11 / 109-----
+batch loss: 26.733185
+batch yaw loss: 5.000000
+----12 / 109-----
+batch loss: 0.104469
+batch yaw loss: 30.500000
+----13 / 109-----
+batch loss: 8.664101
+batch yaw loss: 2.500000
+----14 / 109-----
+batch loss: 12.110001
+batch yaw loss: 5.500000
+----15 / 109-----
+batch loss: 21.136013
+batch yaw loss: 0.500000
+----16 / 109-----
+batch loss: 0.228004
+batch yaw loss: 2.500000
+----17 / 109-----
+batch loss: 44.515430
+batch yaw loss: 1.000000
+----18 / 109-----
+batch loss: 2.104462
+batch yaw loss: 25.000000
+----19 / 109-----
+batch loss: 14.834253
+batch yaw loss: 3.000000
+----20 / 109-----
+batch loss: 114.311607
+batch yaw loss: 6.000000
+----21 / 109-----
+batch loss: 25.911663
+batch yaw loss: 9.000000
+----22 / 109-----
+batch loss: 3.342808
+batch yaw loss: 3.500000
+----23 / 109-----
+batch loss: 241.154709
+batch yaw loss: 0.500000
+----24 / 109-----
+batch loss: 17.990818
+batch yaw loss: 8.000000
+----25-----
+----FAULTY TUPLE-----
+----26 / 109-----
+batch loss: 0.293259
+batch yaw loss: 1.500000
+----27 / 109-----
+batch loss: 0.000000
+batch yaw loss: 28.500000
+----28 / 109-----
+batch loss: 2.097271
+batch yaw loss: 10.500000
+----29 / 109-----
+batch loss: 4.000858
+batch yaw loss: 18.500000
+----30 / 109-----
+batch loss: 11.044008
+batch yaw loss: 28.500000
+----31 / 109-----
+batch loss: 72.495728
+batch yaw loss: 50.000000
+----32 / 109-----
+batch loss: 12.453308
+batch yaw loss: 32.000000
+----33 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----34 / 109-----
+batch loss: 30.380888
+batch yaw loss: 11.000000
+----35 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.000000
+----36 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----37 / 109-----
+batch loss: 0.000000
+batch yaw loss: 24.000000
+----38 / 109-----
+batch loss: 2.082596
+batch yaw loss: 49.000000
+----39 / 109-----
+batch loss: 48.883835
+batch yaw loss: 50.500000
+----40 / 109-----
+batch loss: 24.297203
+batch yaw loss: 13.000000
+----41 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----42 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----43 / 109-----
+batch loss: 11.081573
+batch yaw loss: 0.500000
+----44 / 109-----
+batch loss: 7.894791
+batch yaw loss: 5.500000
+----45 / 109-----
+batch loss: 38.503773
+batch yaw loss: 2.000000
+----46 / 109-----
+batch loss: 1.142479
+batch yaw loss: 3.500000
+----47 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----48 / 109-----
+batch loss: 0.222511
+batch yaw loss: 46.500000
+----49 / 109-----
+batch loss: 18.639042
+batch yaw loss: 41.000000
+----50 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----51 / 109-----
+batch loss: 2.019890
+batch yaw loss: 30.000000
+----52 / 109-----
+batch loss: 0.668365
+batch yaw loss: 18.000000
+----53 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----54 / 109-----
+batch loss: 18.030598
+batch yaw loss: 3.500000
+----55 / 109-----
+batch loss: 0.000000
+batch yaw loss: 17.000000
+----56 / 109-----
+batch loss: 16.705364
+batch yaw loss: 7.000000
+----57 / 109-----
+batch loss: 3.986839
+batch yaw loss: 9.000000
+----58 / 109-----
+batch loss: 17.550865
+batch yaw loss: 43.500000
+----59 / 109-----
+batch loss: 55.423996
+batch yaw loss: 1.500000
+----60 / 109-----
+batch loss: 34.326126
+batch yaw loss: 47.000000
+----61 / 109-----
+batch loss: 3.913620
+batch yaw loss: 29.500000
+----62 / 109-----
+batch loss: 54.412361
+batch yaw loss: 14.500000
+----63 / 109-----
+batch loss: 27.364357
+batch yaw loss: 31.500000
+----64 / 109-----
+batch loss: 15.622971
+batch yaw loss: 23.000000
+----65 / 109-----
+batch loss: 67.315514
+batch yaw loss: 2.500000
+----66 / 109-----
+batch loss: 36.612434
+batch yaw loss: 16.500000
+----67 / 109-----
+batch loss: 0.849083
+batch yaw loss: 85.500000
+----68 / 109-----
+batch loss: 16.850815
+batch yaw loss: 1.000000
+----69 / 109-----
+batch loss: 1.526320
+batch yaw loss: 16.500000
+----70 / 109-----
+batch loss: 32.791893
+batch yaw loss: 6.000000
+----71 / 109-----
+batch loss: 14.900158
+batch yaw loss: 1.500000
+----72 / 109-----
+batch loss: 25.638004
+batch yaw loss: 1.000000
+----73 / 109-----
+batch loss: 1.496859
+batch yaw loss: 0.000000
+----74 / 109-----
+batch loss: 0.160923
+batch yaw loss: 12.500000
+----75 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----76 / 109-----
+batch loss: 1.996033
+batch yaw loss: 11.500000
+----77 / 109-----
+batch loss: 14.741013
+batch yaw loss: 5.500000
+----78 / 109-----
+batch loss: 5.866829
+batch yaw loss: 1.000000
+----79 / 109-----
+batch loss: 20.164124
+batch yaw loss: 16.500000
+----80 / 109-----
+batch loss: 1.212875
+batch yaw loss: 1.000000
+----81 / 109-----
+batch loss: 21.624407
+batch yaw loss: 11.000000
+----82 / 109-----
+batch loss: 10.227364
+batch yaw loss: 0.000000
+----83 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----84 / 109-----
+batch loss: 2.582996
+batch yaw loss: 1.500000
+----85 / 109-----
+batch loss: 20.604225
+batch yaw loss: 26.500000
+----86 / 109-----
+batch loss: 2.002497
+batch yaw loss: 4.000000
+----87 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----88 / 109-----
+batch loss: 14.682487
+batch yaw loss: 3.000000
+----89 / 109-----
+batch loss: 0.393373
+batch yaw loss: 4.500000
+----90-----
+----FAULTY TUPLE-----
+----91 / 109-----
+batch loss: 15.333309
+batch yaw loss: 0.500000
+----92 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----93 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----94 / 109-----
+batch loss: 129.151245
+batch yaw loss: 0.500000
+----95 / 109-----
+batch loss: 1.196045
+batch yaw loss: 1.000000
+----96 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.500000
+----97 / 109-----
+batch loss: 17.551449
+batch yaw loss: 0.000000
+----98 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----99 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----100 / 109-----
+batch loss: 2.687687
+batch yaw loss: 0.500000
+----101 / 109-----
+batch loss: 2.065083
+batch yaw loss: 4.000000
+----102 / 109-----
+batch loss: 2.749226
+batch yaw loss: 28.500000
+----103 / 109-----
+batch loss: 0.376740
+batch yaw loss: 11.500000
+----104 / 109-----
+batch loss: 0.000000
+batch yaw loss: 38.500000
+----105 / 109-----
+batch loss: 27.569891
+batch yaw loss: 16.000000
+----106 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----107 / 109-----
+batch loss: 1.137592
+batch yaw loss: 1.000000
+----108 / 109-----
+batch loss: 2.427694
+batch yaw loss: 8.500000
+EVALUATING...
+EVAL RECALL: 0.0
+**** EPOCH 001/ 20 ****
+----0 / 109-----
+batch loss: 0.203629
+batch yaw loss: 1.500000
+----1 / 109-----
+batch loss: 14.263306
+batch yaw loss: 10.000000
+----2 / 109-----
+batch loss: 25.096992
+batch yaw loss: 4.000000
+----3 / 109-----
+batch loss: 0.855217
+batch yaw loss: 62.500000
+----4 / 109-----
+batch loss: 13.805153
+batch yaw loss: 0.500000
+----5 / 109-----
+batch loss: 4.596619
+batch yaw loss: 3.000000
+----6 / 109-----
+batch loss: 0.000000
+batch yaw loss: 11.500000
+----7 / 109-----
+batch loss: 0.000000
+batch yaw loss: 7.500000
+----8 / 109-----
+batch loss: 3.972621
+batch yaw loss: 2.500000
+----9 / 109-----
+batch loss: 18.934673
+batch yaw loss: 4.000000
+----10 / 109-----
+batch loss: 13.916639
+batch yaw loss: 0.500000
+----11 / 109-----
+batch loss: 18.891724
+batch yaw loss: 52.500000
+----12 / 109-----
+batch loss: 0.000000
+batch yaw loss: 35.000000
+----13 / 109-----
+batch loss: 14.563187
+batch yaw loss: 5.500000
+----14 / 109-----
+batch loss: 1.173832
+batch yaw loss: 2.500000
+----15 / 109-----
+batch loss: 4.406616
+batch yaw loss: 4.000000
+----16 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----17 / 109-----
+batch loss: 12.016529
+batch yaw loss: 36.000000
+----18 / 109-----
+batch loss: 0.000000
+batch yaw loss: 47.000000
+----19 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----20 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----21 / 109-----
+batch loss: 7.802247
+batch yaw loss: 30.500000
+----22 / 109-----
+batch loss: 3.693031
+batch yaw loss: 25.000000
+----23 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----24 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----25 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----26 / 109-----
+batch loss: 2.696518
+batch yaw loss: 1.500000
+----27 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----28 / 109-----
+batch loss: 7.387497
+batch yaw loss: 13.000000
+----29-----
+----FAULTY TUPLE-----
+----30 / 109-----
+batch loss: 17.603035
+batch yaw loss: 4.000000
+----31 / 109-----
+batch loss: 9.273087
+batch yaw loss: 4.000000
+----32 / 109-----
+batch loss: 18.717474
+batch yaw loss: 0.000000
+----33-----
+----FAULTY TUPLE-----
+----34 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----35 / 109-----
+batch loss: 13.227573
+batch yaw loss: 1.000000
+----36 / 109-----
+batch loss: 2.275475
+batch yaw loss: 0.500000
+----37 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----38 / 109-----
+batch loss: 1.076401
+batch yaw loss: 49.000000
+----39 / 109-----
+batch loss: 0.000000
+batch yaw loss: 60.000000
+----40 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----41 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----42 / 109-----
+batch loss: 11.915604
+batch yaw loss: 1.000000
+----43 / 109-----
+batch loss: 3.877583
+batch yaw loss: 1.500000
+----44 / 109-----
+batch loss: 0.690914
+batch yaw loss: 1.000000
+----45 / 109-----
+batch loss: 0.000000
+batch yaw loss: 36.000000
+----46 / 109-----
+batch loss: 0.327354
+batch yaw loss: 2.500000
+----47 / 109-----
+batch loss: 0.000000
+batch yaw loss: 34.000000
+----48 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----49 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----50 / 109-----
+batch loss: 0.000000
+batch yaw loss: 23.500000
+----51 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----52 / 109-----
+batch loss: 25.630707
+batch yaw loss: 2.500000
+----53 / 109-----
+batch loss: 0.861855
+batch yaw loss: 4.000000
+----54 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----55 / 109-----
+batch loss: 13.840836
+batch yaw loss: 55.500000
+----56 / 109-----
+batch loss: 20.036724
+batch yaw loss: 1.500000
+----57 / 109-----
+batch loss: 4.789768
+batch yaw loss: 0.000000
+----58 / 109-----
+batch loss: 7.120220
+batch yaw loss: 15.000000
+----59 / 109-----
+batch loss: 23.116386
+batch yaw loss: 52.500000
+----60 / 109-----
+batch loss: 0.000000
+batch yaw loss: 96.500000
+----61 / 109-----
+batch loss: 0.000000
+batch yaw loss: 18.000000
+----62 / 109-----
+batch loss: 4.162960
+batch yaw loss: 6.500000
+----63 / 109-----
+batch loss: 16.724815
+batch yaw loss: 8.000000
+----64 / 109-----
+batch loss: 15.891495
+batch yaw loss: 2.500000
+----65 / 109-----
+batch loss: 19.714142
+batch yaw loss: 26.000000
+----66 / 109-----
+batch loss: 3.587200
+batch yaw loss: 4.500000
+----67 / 109-----
+batch loss: 2.936615
+batch yaw loss: 8.500000
+----68 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----69 / 109-----
+batch loss: 16.688278
+batch yaw loss: 3.000000
+----70 / 109-----
+batch loss: 4.161062
+batch yaw loss: 2.000000
+----71 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----72 / 109-----
+batch loss: 0.000000
+batch yaw loss: 12.000000
+----73 / 109-----
+batch loss: 45.196068
+batch yaw loss: 39.500000
+----74 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----75 / 109-----
+batch loss: 23.949051
+batch yaw loss: 6.500000
+----76 / 109-----
+batch loss: 0.267052
+batch yaw loss: 3.000000
+----77 / 109-----
+batch loss: 1.509686
+batch yaw loss: 5.000000
+----78 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.000000
+----79 / 109-----
+batch loss: 9.977928
+batch yaw loss: 1.000000
+----80 / 109-----
+batch loss: 14.191837
+batch yaw loss: 25.500000
+----81 / 109-----
+batch loss: 0.709491
+batch yaw loss: 0.500000
+----82 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----83 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----84 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----85 / 109-----
+batch loss: 32.836952
+batch yaw loss: 0.500000
+----86 / 109-----
+batch loss: 11.961870
+batch yaw loss: 1.500000
+----87 / 109-----
+batch loss: 4.074226
+batch yaw loss: 1.000000
+----88 / 109-----
+batch loss: 87.620987
+batch yaw loss: 1.500000
+----89 / 109-----
+batch loss: 4.354239
+batch yaw loss: 1.500000
+----90 / 109-----
+batch loss: 0.362076
+batch yaw loss: 1.500000
+----91 / 109-----
+batch loss: 11.716721
+batch yaw loss: 30.000000
+----92 / 109-----
+batch loss: 1.358887
+batch yaw loss: 4.500000
+----93 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----94 / 109-----
+batch loss: 1.995716
+batch yaw loss: 3.500000
+----95 / 109-----
+batch loss: 20.698048
+batch yaw loss: 2.500000
+----96 / 109-----
+batch loss: 3.174942
+batch yaw loss: 1.000000
+----97 / 109-----
+batch loss: 1.153837
+batch yaw loss: 1.000000
+----98 / 109-----
+batch loss: 0.000000
+batch yaw loss: 27.500000
+----99 / 109-----
+batch loss: 2.166299
+batch yaw loss: 0.000000
+----100 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----101 / 109-----
+batch loss: 0.966999
+batch yaw loss: 17.500000
+----102 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----103 / 109-----
+batch loss: 0.000000
+batch yaw loss: 66.000000
+----104 / 109-----
+batch loss: 1.243801
+batch yaw loss: 0.500000
+----105 / 109-----
+batch loss: 0.000000
+batch yaw loss: 34.000000
+----106 / 109-----
+batch loss: 2.852169
+batch yaw loss: 65.500000
+----107 / 109-----
+batch loss: 19.944046
+batch yaw loss: 34.500000
+----108 / 109-----
+batch loss: 4.000103
+batch yaw loss: 28.500000
+EVALUATING...
+EVAL RECALL: 0.0
+**** EPOCH 002/ 20 ****
+----0 / 109-----
+batch loss: 2.658829
+batch yaw loss: 54.000000
+----1 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----2 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----3 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----4 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----5 / 109-----
+batch loss: 3.163970
+batch yaw loss: 1.500000
+----6 / 109-----
+batch loss: 13.807589
+batch yaw loss: 1.000000
+----7 / 109-----
+batch loss: 2.906326
+batch yaw loss: 17.500000
+----8 / 109-----
+batch loss: 0.290749
+batch yaw loss: 1.000000
+----9 / 109-----
+batch loss: 18.947418
+batch yaw loss: 55.000000
+----10 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----11 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.500000
+----12 / 109-----
+batch loss: 25.180229
+batch yaw loss: 1.000000
+----13 / 109-----
+batch loss: 0.506660
+batch yaw loss: 10.500000
+----14 / 109-----
+batch loss: 17.350140
+batch yaw loss: 34.000000
+----15 / 109-----
+batch loss: 0.720573
+batch yaw loss: 2.000000
+----16 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----17 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----18 / 109-----
+batch loss: 14.425589
+batch yaw loss: 0.500000
+----19 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----20 / 109-----
+batch loss: 2.963783
+batch yaw loss: 3.500000
+----21 / 109-----
+batch loss: 13.895081
+batch yaw loss: 2.500000
+----22 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----23 / 109-----
+batch loss: 1.962769
+batch yaw loss: 23.000000
+----24 / 109-----
+batch loss: 13.164482
+batch yaw loss: 1.000000
+----25 / 109-----
+batch loss: 1.903797
+batch yaw loss: 1.500000
+----26 / 109-----
+batch loss: 0.990791
+batch yaw loss: 1.000000
+----27 / 109-----
+batch loss: 4.272041
+batch yaw loss: 1.000000
+----28 / 109-----
+batch loss: 0.058792
+batch yaw loss: 11.000000
+----29 / 109-----
+batch loss: 5.880211
+batch yaw loss: 5.000000
+----30 / 109-----
+batch loss: 14.202515
+batch yaw loss: 40.000000
+----31 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----32 / 109-----
+batch loss: 0.460457
+batch yaw loss: 5.500000
+----33 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----34 / 109-----
+batch loss: 9.322392
+batch yaw loss: 1.500000
+----35 / 109-----
+batch loss: 18.663202
+batch yaw loss: 4.000000
+----36 / 109-----
+batch loss: 11.692268
+batch yaw loss: 1.500000
+----37 / 109-----
+batch loss: 4.687485
+batch yaw loss: 3.500000
+----38 / 109-----
+batch loss: 14.197456
+batch yaw loss: 16.500000
+----39 / 109-----
+batch loss: 4.481611
+batch yaw loss: 1.000000
+----40 / 109-----
+batch loss: 0.000000
+batch yaw loss: 10.000000
+----41 / 109-----
+batch loss: 11.950933
+batch yaw loss: 1.000000
+----42 / 109-----
+batch loss: 0.570961
+batch yaw loss: 2.000000
+----43 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----44 / 109-----
+batch loss: 1.674595
+batch yaw loss: 1.500000
+----45 / 109-----
+batch loss: 11.810715
+batch yaw loss: 12.500000
+----46 / 109-----
+batch loss: 10.737820
+batch yaw loss: 35.000000
+----47 / 109-----
+batch loss: 1.095554
+batch yaw loss: 13.500000
+----48 / 109-----
+batch loss: 2.357079
+batch yaw loss: 1.500000
+----49 / 109-----
+batch loss: 7.128875
+batch yaw loss: 2.500000
+----50 / 109-----
+batch loss: 0.000000
+batch yaw loss: 14.500000
+----51 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----52 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----53 / 109-----
+batch loss: 14.068680
+batch yaw loss: 1.000000
+----54 / 109-----
+batch loss: 4.990311
+batch yaw loss: 27.500000
+----55 / 109-----
+batch loss: 0.883591
+batch yaw loss: 4.500000
+----56 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----57 / 109-----
+batch loss: 0.346157
+batch yaw loss: 31.000000
+----58 / 109-----
+batch loss: 14.113441
+batch yaw loss: 3.000000
+----59 / 109-----
+batch loss: 1.615906
+batch yaw loss: 53.000000
+----60 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----61 / 109-----
+batch loss: 0.000000
+batch yaw loss: 21.000000
+----62 / 109-----
+batch loss: 1.802044
+batch yaw loss: 24.000000
+----63 / 109-----
+batch loss: 0.977375
+batch yaw loss: 10.500000
+----64 / 109-----
+batch loss: 19.472105
+batch yaw loss: 0.500000
+----65 / 109-----
+batch loss: 2.629868
+batch yaw loss: 0.500000
+----66 / 109-----
+batch loss: 2.809105
+batch yaw loss: 13.000000
+----67 / 109-----
+batch loss: 3.089157
+batch yaw loss: 11.000000
+----68 / 109-----
+batch loss: 20.207001
+batch yaw loss: 13.500000
+----69 / 109-----
+batch loss: 0.554716
+batch yaw loss: 0.500000
+----70 / 109-----
+batch loss: 9.049171
+batch yaw loss: 24.500000
+----71 / 109-----
+batch loss: 0.444687
+batch yaw loss: 14.000000
+----72 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----73 / 109-----
+batch loss: 5.694043
+batch yaw loss: 1.000000
+----74 / 109-----
+batch loss: 10.837837
+batch yaw loss: 1.000000
+----75 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----76 / 109-----
+batch loss: 0.000000
+batch yaw loss: 16.500000
+----77 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----78 / 109-----
+batch loss: 0.477875
+batch yaw loss: 2.000000
+----79 / 109-----
+batch loss: 2.611552
+batch yaw loss: 1.000000
+----80 / 109-----
+batch loss: 2.316860
+batch yaw loss: 3.000000
+----81 / 109-----
+batch loss: 10.720985
+batch yaw loss: 1.000000
+----82 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----83 / 109-----
+batch loss: 0.588299
+batch yaw loss: 1.000000
+----84 / 109-----
+batch loss: 0.444035
+batch yaw loss: 3.000000
+----85-----
+----FAULTY TUPLE-----
+----86 / 109-----
+batch loss: 4.544846
+batch yaw loss: 16.500000
+----87 / 109-----
+batch loss: 1.118473
+batch yaw loss: 15.000000
+----88 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.000000
+----89 / 109-----
+batch loss: 0.000000
+batch yaw loss: 106.500000
+----90 / 109-----
+batch loss: 25.203732
+batch yaw loss: 0.000000
+----91 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----92 / 109-----
+batch loss: 1.559921
+batch yaw loss: 47.000000
+----93 / 109-----
+batch loss: 0.000000
+batch yaw loss: 15.000000
+----94 / 109-----
+batch loss: 12.396431
+batch yaw loss: 9.500000
+----95 / 109-----
+batch loss: 5.807457
+batch yaw loss: 62.500000
+----96 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----97 / 109-----
+batch loss: 15.261284
+batch yaw loss: 48.000000
+----98 / 109-----
+batch loss: 15.379948
+batch yaw loss: 3.500000
+----99 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----100-----
+----FAULTY TUPLE-----
+----101 / 109-----
+batch loss: 0.730980
+batch yaw loss: 9.500000
+----102 / 109-----
+batch loss: 5.527561
+batch yaw loss: 3.000000
+----103 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----104 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----105 / 109-----
+batch loss: 20.427975
+batch yaw loss: 5.000000
+----106 / 109-----
+batch loss: 1.830956
+batch yaw loss: 4.500000
+----107 / 109-----
+batch loss: 13.474854
+batch yaw loss: 4.500000
+----108 / 109-----
+batch loss: 13.949950
+batch yaw loss: 30.500000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 003/ 20 ****
+----0 / 109-----
+batch loss: 0.614635
+batch yaw loss: 1.000000
+----1 / 109-----
+batch loss: 0.619659
+batch yaw loss: 5.000000
+----2 / 109-----
+batch loss: 0.097031
+batch yaw loss: 21.500000
+----3 / 109-----
+batch loss: 10.665703
+batch yaw loss: 6.000000
+----4 / 109-----
+batch loss: 0.603865
+batch yaw loss: 0.000000
+----5 / 109-----
+batch loss: 4.005627
+batch yaw loss: 1.000000
+----6 / 109-----
+batch loss: 15.665928
+batch yaw loss: 1.500000
+----7 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----8 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----9 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----10-----
+----FAULTY TUPLE-----
+----11 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.500000
+----12 / 109-----
+batch loss: 0.000000
+batch yaw loss: 32.500000
+----13 / 109-----
+batch loss: 0.000000
+batch yaw loss: 24.500000
+----14 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.500000
+----15 / 109-----
+batch loss: 0.000000
+batch yaw loss: 43.500000
+----16 / 109-----
+batch loss: 11.778252
+batch yaw loss: 6.500000
+----17 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.000000
+----18 / 109-----
+batch loss: 5.137108
+batch yaw loss: 3.500000
+----19 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----20 / 109-----
+batch loss: 5.853424
+batch yaw loss: 12.500000
+----21 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.500000
+----22 / 109-----
+batch loss: 0.139706
+batch yaw loss: 4.000000
+----23 / 109-----
+batch loss: 0.710556
+batch yaw loss: 5.000000
+----24 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.000000
+----25 / 109-----
+batch loss: 2.740383
+batch yaw loss: 43.000000
+----26 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----27 / 109-----
+batch loss: 0.105408
+batch yaw loss: 1.500000
+----28 / 109-----
+batch loss: 13.023727
+batch yaw loss: 8.500000
+----29 / 109-----
+batch loss: 1.498913
+batch yaw loss: 1.500000
+----30 / 109-----
+batch loss: 1.754578
+batch yaw loss: 9.000000
+----31 / 109-----
+batch loss: 1.214183
+batch yaw loss: 0.000000
+----32 / 109-----
+batch loss: 13.523697
+batch yaw loss: 4.500000
+----33 / 109-----
+batch loss: 2.071953
+batch yaw loss: 41.000000
+----34 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----35 / 109-----
+batch loss: 0.515938
+batch yaw loss: 6.000000
+----36 / 109-----
+batch loss: 100.157303
+batch yaw loss: 77.000000
+----37 / 109-----
+batch loss: 0.373650
+batch yaw loss: 2.000000
+----38 / 109-----
+batch loss: 2.261897
+batch yaw loss: 0.000000
+----39 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.500000
+----40 / 109-----
+batch loss: 11.284006
+batch yaw loss: 0.500000
+----41 / 109-----
+batch loss: 0.000000
+batch yaw loss: 12.500000
+----42 / 109-----
+batch loss: 4.543282
+batch yaw loss: 29.000000
+----43 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----44 / 109-----
+batch loss: 1.504668
+batch yaw loss: 30.000000
+----45 / 109-----
+batch loss: 14.470020
+batch yaw loss: 1.500000
+----46 / 109-----
+batch loss: 0.983299
+batch yaw loss: 21.500000
+----47 / 109-----
+batch loss: 0.521442
+batch yaw loss: 9.500000
+----48 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----49 / 109-----
+batch loss: 11.500328
+batch yaw loss: 0.500000
+----50 / 109-----
+batch loss: 2.416180
+batch yaw loss: 1.000000
+----51 / 109-----
+batch loss: 11.639164
+batch yaw loss: 37.500000
+----52 / 109-----
+batch loss: 15.790302
+batch yaw loss: 30.000000
+----53 / 109-----
+batch loss: 1.781914
+batch yaw loss: 2.000000
+----54 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----55 / 109-----
+batch loss: 3.779297
+batch yaw loss: 21.000000
+----56 / 109-----
+batch loss: 10.609694
+batch yaw loss: 2.500000
+----57 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----58 / 109-----
+batch loss: 19.355148
+batch yaw loss: 6.500000
+----59 / 109-----
+batch loss: 0.000000
+batch yaw loss: 60.500000
+----60 / 109-----
+batch loss: 6.548790
+batch yaw loss: 1.000000
+----61 / 109-----
+batch loss: 1.781414
+batch yaw loss: 38.500000
+----62-----
+----FAULTY TUPLE-----
+----63 / 109-----
+batch loss: 0.000000
+batch yaw loss: 16.500000
+----64 / 109-----
+batch loss: 1.793385
+batch yaw loss: 1.000000
+----65 / 109-----
+batch loss: 2.459264
+batch yaw loss: 28.000000
+----66 / 109-----
+batch loss: 10.197018
+batch yaw loss: 29.500000
+----67 / 109-----
+batch loss: 1.987541
+batch yaw loss: 30.500000
+----68 / 109-----
+batch loss: 0.073195
+batch yaw loss: 0.000000
+----69 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----70 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----71 / 109-----
+batch loss: 1.210769
+batch yaw loss: 0.000000
+----72 / 109-----
+batch loss: 4.587326
+batch yaw loss: 1.000000
+----73 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----74 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----75 / 109-----
+batch loss: 0.533905
+batch yaw loss: 0.500000
+----76 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----77 / 109-----
+batch loss: 23.410667
+batch yaw loss: 67.500000
+----78 / 109-----
+batch loss: 3.432152
+batch yaw loss: 2.000000
+----79 / 109-----
+batch loss: 16.280350
+batch yaw loss: 29.500000
+----80 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----81 / 109-----
+batch loss: 2.322615
+batch yaw loss: 1.000000
+----82 / 109-----
+batch loss: 0.000000
+batch yaw loss: 29.500000
+----83 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----84 / 109-----
+batch loss: 6.476288
+batch yaw loss: 25.000000
+----85 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.000000
+----86 / 109-----
+batch loss: 0.142224
+batch yaw loss: 7.000000
+----87 / 109-----
+batch loss: 0.000000
+batch yaw loss: 7.500000
+----88 / 109-----
+batch loss: 4.754469
+batch yaw loss: 1.000000
+----89 / 109-----
+batch loss: 5.000893
+batch yaw loss: 2.000000
+----90 / 109-----
+batch loss: 15.439339
+batch yaw loss: 41.500000
+----91 / 109-----
+batch loss: 11.202084
+batch yaw loss: 12.000000
+----92 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.000000
+----93 / 109-----
+batch loss: 1.397472
+batch yaw loss: 0.500000
+----94 / 109-----
+batch loss: 0.017773
+batch yaw loss: 2.500000
+----95 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----96 / 109-----
+batch loss: 0.299736
+batch yaw loss: 1.000000
+----97 / 109-----
+batch loss: 1.377242
+batch yaw loss: 9.500000
+----98 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----99 / 109-----
+batch loss: 0.000000
+batch yaw loss: 46.500000
+----100 / 109-----
+batch loss: 13.631950
+batch yaw loss: 0.500000
+----101 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----102 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----103 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----104 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----105 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----106 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----107 / 109-----
+batch loss: 2.453023
+batch yaw loss: 0.500000
+----108 / 109-----
+batch loss: 13.833969
+batch yaw loss: 2.000000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 004/ 20 ****
+----0 / 109-----
+batch loss: 10.732859
+batch yaw loss: 7.500000
+----1 / 109-----
+batch loss: 14.471909
+batch yaw loss: 37.000000
+----2 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----3 / 109-----
+batch loss: 18.410696
+batch yaw loss: 33.000000
+----4 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----5 / 109-----
+batch loss: 2.405869
+batch yaw loss: 25.500000
+----6 / 109-----
+batch loss: 1.346577
+batch yaw loss: 5.000000
+----7 / 109-----
+batch loss: 0.994823
+batch yaw loss: 0.500000
+----8 / 109-----
+batch loss: 0.573826
+batch yaw loss: 2.000000
+----9 / 109-----
+batch loss: 1.973679
+batch yaw loss: 56.000000
+----10 / 109-----
+batch loss: 0.873306
+batch yaw loss: 3.500000
+----11 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.500000
+----12 / 109-----
+batch loss: 0.087830
+batch yaw loss: 1.000000
+----13 / 109-----
+batch loss: 12.389604
+batch yaw loss: 1.000000
+----14 / 109-----
+batch loss: 11.768631
+batch yaw loss: 54.500000
+----15 / 109-----
+batch loss: 5.512547
+batch yaw loss: 45.500000
+----16 / 109-----
+batch loss: 0.000000
+batch yaw loss: 40.500000
+----17 / 109-----
+batch loss: 0.657455
+batch yaw loss: 0.000000
+----18 / 109-----
+batch loss: 0.000000
+batch yaw loss: 53.500000
+----19 / 109-----
+batch loss: 7.107107
+batch yaw loss: 15.000000
+----20 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----21 / 109-----
+batch loss: 0.000000
+batch yaw loss: 115.500000
+----22-----
+----FAULTY TUPLE-----
+----23 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----24 / 109-----
+batch loss: 0.610435
+batch yaw loss: 57.000000
+----25 / 109-----
+batch loss: 0.258842
+batch yaw loss: 2.000000
+----26 / 109-----
+batch loss: 0.266277
+batch yaw loss: 1.000000
+----27 / 109-----
+batch loss: 0.262932
+batch yaw loss: 7.000000
+----28 / 109-----
+batch loss: 3.317009
+batch yaw loss: 28.500000
+----29 / 109-----
+batch loss: 2.705124
+batch yaw loss: 1.000000
+----30 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.500000
+----31 / 109-----
+batch loss: 0.900497
+batch yaw loss: 69.000000
+----32 / 109-----
+batch loss: 0.000000
+batch yaw loss: 28.000000
+----33 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----34 / 109-----
+batch loss: 8.544140
+batch yaw loss: 35.500000
+----35 / 109-----
+batch loss: 15.033073
+batch yaw loss: 3.000000
+----36 / 109-----
+batch loss: 0.035501
+batch yaw loss: 2.000000
+----37 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----38 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----39 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----40 / 109-----
+batch loss: 0.015328
+batch yaw loss: 56.000000
+----41 / 109-----
+batch loss: 0.000000
+batch yaw loss: 15.000000
+----42 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----43 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----44 / 109-----
+batch loss: 0.387356
+batch yaw loss: 1.000000
+----45 / 109-----
+batch loss: 0.000000
+batch yaw loss: 37.000000
+----46 / 109-----
+batch loss: 1.305958
+batch yaw loss: 1.500000
+----47 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.500000
+----48 / 109-----
+batch loss: 7.049711
+batch yaw loss: 4.500000
+----49 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----50 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----51 / 109-----
+batch loss: 0.797009
+batch yaw loss: 0.000000
+----52 / 109-----
+batch loss: 1.230045
+batch yaw loss: 5.000000
+----53 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----54 / 109-----
+batch loss: 10.155457
+batch yaw loss: 0.000000
+----55 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----56 / 109-----
+batch loss: 1.710506
+batch yaw loss: 1.000000
+----57 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----58 / 109-----
+batch loss: 8.808380
+batch yaw loss: 1.000000
+----59 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----60 / 109-----
+batch loss: 13.487919
+batch yaw loss: 2.000000
+----61 / 109-----
+batch loss: 2.769466
+batch yaw loss: 1.500000
+----62 / 109-----
+batch loss: 2.568192
+batch yaw loss: 1.000000
+----63 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----64 / 109-----
+batch loss: 26.599152
+batch yaw loss: 2.000000
+----65 / 109-----
+batch loss: 0.375450
+batch yaw loss: 33.000000
+----66 / 109-----
+batch loss: 1.481270
+batch yaw loss: 25.000000
+----67 / 109-----
+batch loss: 5.567230
+batch yaw loss: 1.000000
+----68 / 109-----
+batch loss: 0.000000
+batch yaw loss: 23.500000
+----69 / 109-----
+batch loss: 0.073460
+batch yaw loss: 1.000000
+----70 / 109-----
+batch loss: 9.988583
+batch yaw loss: 7.000000
+----71 / 109-----
+batch loss: 13.719025
+batch yaw loss: 55.000000
+----72 / 109-----
+batch loss: 15.985363
+batch yaw loss: 1.000000
+----73 / 109-----
+batch loss: 13.308914
+batch yaw loss: 25.000000
+----74 / 109-----
+batch loss: 10.592207
+batch yaw loss: 0.500000
+----75 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----76 / 109-----
+batch loss: 13.154968
+batch yaw loss: 1.500000
+----77 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----78 / 109-----
+batch loss: 1.181965
+batch yaw loss: 1.000000
+----79 / 109-----
+batch loss: 0.938334
+batch yaw loss: 1.500000
+----80 / 109-----
+batch loss: 0.000000
+batch yaw loss: 10.000000
+----81 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----82 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----83 / 109-----
+batch loss: 0.689552
+batch yaw loss: 10.500000
+----84 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----85 / 109-----
+batch loss: 2.550774
+batch yaw loss: 5.500000
+----86 / 109-----
+batch loss: 3.437023
+batch yaw loss: 3.000000
+----87 / 109-----
+batch loss: 9.970046
+batch yaw loss: 0.500000
+----88 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----89 / 109-----
+batch loss: 1.047043
+batch yaw loss: 28.000000
+----90 / 109-----
+batch loss: 11.492630
+batch yaw loss: 1.000000
+----91 / 109-----
+batch loss: 0.000000
+batch yaw loss: 69.500000
+----92 / 109-----
+batch loss: 0.178993
+batch yaw loss: 3.500000
+----93 / 109-----
+batch loss: 3.445396
+batch yaw loss: 33.000000
+----94 / 109-----
+batch loss: 10.803703
+batch yaw loss: 13.000000
+----95-----
+----FAULTY TUPLE-----
+----96 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.500000
+----97 / 109-----
+batch loss: 0.000000
+batch yaw loss: 43.000000
+----98 / 109-----
+batch loss: 0.000000
+batch yaw loss: 8.500000
+----99 / 109-----
+batch loss: 2.737778
+batch yaw loss: 54.000000
+----100 / 109-----
+batch loss: 0.000000
+batch yaw loss: 7.000000
+----101 / 109-----
+batch loss: 12.609787
+batch yaw loss: 1.500000
+----102 / 109-----
+batch loss: 2.803200
+batch yaw loss: 1.000000
+----103 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----104 / 109-----
+batch loss: 11.831612
+batch yaw loss: 39.000000
+----105 / 109-----
+batch loss: 12.455091
+batch yaw loss: 2.500000
+----106 / 109-----
+batch loss: 0.433601
+batch yaw loss: 5.000000
+----107 / 109-----
+batch loss: 2.396103
+batch yaw loss: 55.000000
+----108 / 109-----
+batch loss: 2.271065
+batch yaw loss: 27.500000
+EVALUATING...
+EVAL RECALL: 0.0
+**** EPOCH 005/ 20 ****
+----0 / 109-----
+batch loss: 11.579609
+batch yaw loss: 44.000000
+----1 / 109-----
+batch loss: 1.590408
+batch yaw loss: 24.000000
+----2 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----3 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----4 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----5 / 109-----
+batch loss: 6.015091
+batch yaw loss: 1.000000
+----6 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----7 / 109-----
+batch loss: 11.223629
+batch yaw loss: 0.500000
+----8 / 109-----
+batch loss: 1.681083
+batch yaw loss: 0.500000
+----9 / 109-----
+batch loss: 0.000000
+batch yaw loss: 7.000000
+----10 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----11 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.000000
+----12 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----13 / 109-----
+batch loss: 0.566395
+batch yaw loss: 0.000000
+----14 / 109-----
+batch loss: 0.462746
+batch yaw loss: 21.500000
+----15 / 109-----
+batch loss: 12.056057
+batch yaw loss: 0.500000
+----16 / 109-----
+batch loss: 0.000000
+batch yaw loss: 38.000000
+----17 / 109-----
+batch loss: 0.105476
+batch yaw loss: 1.000000
+----18 / 109-----
+batch loss: 1.770779
+batch yaw loss: 0.000000
+----19 / 109-----
+batch loss: 0.000000
+batch yaw loss: 30.000000
+----20 / 109-----
+batch loss: 13.769539
+batch yaw loss: 29.000000
+----21 / 109-----
+batch loss: 0.000000
+batch yaw loss: 16.500000
+----22 / 109-----
+batch loss: 10.472843
+batch yaw loss: 44.500000
+----23 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----24 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----25 / 109-----
+batch loss: 17.687374
+batch yaw loss: 19.500000
+----26 / 109-----
+batch loss: 2.212265
+batch yaw loss: 12.000000
+----27 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----28 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----29 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----30 / 109-----
+batch loss: 0.666294
+batch yaw loss: 1.000000
+----31 / 109-----
+batch loss: 0.763157
+batch yaw loss: 2.500000
+----32 / 109-----
+batch loss: 2.948029
+batch yaw loss: 1.000000
+----33 / 109-----
+batch loss: 2.206535
+batch yaw loss: 58.500000
+----34 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----35 / 109-----
+batch loss: 2.570129
+batch yaw loss: 1.000000
+----36 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----37 / 109-----
+batch loss: 10.185913
+batch yaw loss: 33.000000
+----38 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----39 / 109-----
+batch loss: 10.009926
+batch yaw loss: 0.500000
+----40 / 109-----
+batch loss: 2.598934
+batch yaw loss: 6.500000
+----41 / 109-----
+batch loss: 0.000000
+batch yaw loss: 15.500000
+----42 / 109-----
+batch loss: 2.563890
+batch yaw loss: 1.500000
+----43 / 109-----
+batch loss: 11.454290
+batch yaw loss: 2.000000
+----44 / 109-----
+batch loss: 10.096558
+batch yaw loss: 1.000000
+----45 / 109-----
+batch loss: 1.866680
+batch yaw loss: 84.500000
+----46 / 109-----
+batch loss: 10.558548
+batch yaw loss: 11.500000
+----47 / 109-----
+batch loss: 12.776382
+batch yaw loss: 0.500000
+----48 / 109-----
+batch loss: 0.271004
+batch yaw loss: 37.500000
+----49 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----50 / 109-----
+batch loss: 2.211037
+batch yaw loss: 12.500000
+----51 / 109-----
+batch loss: 2.671516
+batch yaw loss: 3.500000
+----52 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.500000
+----53 / 109-----
+batch loss: 2.788109
+batch yaw loss: 1.000000
+----54 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----55 / 109-----
+batch loss: 0.007045
+batch yaw loss: 2.000000
+----56 / 109-----
+batch loss: 0.830116
+batch yaw loss: 28.500000
+----57 / 109-----
+batch loss: 2.088505
+batch yaw loss: 27.000000
+----58 / 109-----
+batch loss: 5.293533
+batch yaw loss: 11.500000
+----59 / 109-----
+batch loss: 14.075851
+batch yaw loss: 14.500000
+----60 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----61 / 109-----
+batch loss: 0.551605
+batch yaw loss: 14.500000
+----62 / 109-----
+batch loss: 0.000000
+batch yaw loss: 55.500000
+----63 / 109-----
+batch loss: 4.685367
+batch yaw loss: 0.500000
+----64 / 109-----
+batch loss: 10.939713
+batch yaw loss: 32.500000
+----65 / 109-----
+batch loss: 2.105457
+batch yaw loss: 19.000000
+----66 / 109-----
+batch loss: 0.000000
+batch yaw loss: 33.500000
+----67 / 109-----
+batch loss: 0.469002
+batch yaw loss: 0.500000
+----68 / 109-----
+batch loss: 2.703604
+batch yaw loss: 27.500000
+----69 / 109-----
+batch loss: 10.499613
+batch yaw loss: 1.000000
+----70 / 109-----
+batch loss: 0.000000
+batch yaw loss: 34.500000
+----71 / 109-----
+batch loss: 17.588341
+batch yaw loss: 40.500000
+----72 / 109-----
+batch loss: 9.375374
+batch yaw loss: 3.000000
+----73 / 109-----
+batch loss: 2.162300
+batch yaw loss: 54.500000
+----74 / 109-----
+batch loss: 1.179464
+batch yaw loss: 1.000000
+----75 / 109-----
+batch loss: 1.110069
+batch yaw loss: 20.500000
+----76 / 109-----
+batch loss: 2.806229
+batch yaw loss: 6.500000
+----77 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----78 / 109-----
+batch loss: 4.196663
+batch yaw loss: 33.500000
+----79 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----80 / 109-----
+batch loss: 0.000000
+batch yaw loss: 7.500000
+----81 / 109-----
+batch loss: 0.854929
+batch yaw loss: 0.500000
+----82 / 109-----
+batch loss: 14.485519
+batch yaw loss: 0.500000
+----83 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----84 / 109-----
+batch loss: 0.141636
+batch yaw loss: 0.500000
+----85 / 109-----
+batch loss: 5.592595
+batch yaw loss: 0.500000
+----86 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----87 / 109-----
+batch loss: 3.763535
+batch yaw loss: 2.500000
+----88 / 109-----
+batch loss: 7.483141
+batch yaw loss: 3.500000
+----89 / 109-----
+batch loss: 11.611198
+batch yaw loss: 42.000000
+----90 / 109-----
+batch loss: 11.169197
+batch yaw loss: 1.000000
+----91 / 109-----
+batch loss: 13.134426
+batch yaw loss: 15.000000
+----92 / 109-----
+batch loss: 4.700830
+batch yaw loss: 7.000000
+----93 / 109-----
+batch loss: 0.352772
+batch yaw loss: 1.500000
+----94 / 109-----
+batch loss: 10.948151
+batch yaw loss: 15.500000
+----95 / 109-----
+batch loss: 5.646685
+batch yaw loss: 1.000000
+----96 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----97 / 109-----
+batch loss: 0.000000
+batch yaw loss: 11.000000
+----98 / 109-----
+batch loss: 11.266338
+batch yaw loss: 1.500000
+----99 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----100 / 109-----
+batch loss: 0.987080
+batch yaw loss: 112.000000
+----101 / 109-----
+batch loss: 0.000000
+batch yaw loss: 21.500000
+----102 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----103 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----104 / 109-----
+batch loss: 2.978432
+batch yaw loss: 5.000000
+----105 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----106-----
+----FAULTY TUPLE-----
+----107 / 109-----
+batch loss: 12.578761
+batch yaw loss: 0.000000
+----108-----
+----FAULTY TUPLE-----
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 006/ 20 ****
+----0 / 109-----
+batch loss: 12.048492
+batch yaw loss: 5.000000
+----1 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----2 / 109-----
+batch loss: 0.000000
+batch yaw loss: 30.500000
+----3 / 109-----
+batch loss: 0.000000
+batch yaw loss: 12.500000
+----4 / 109-----
+batch loss: 0.000000
+batch yaw loss: 38.500000
+----5 / 109-----
+batch loss: 0.519857
+batch yaw loss: 1.000000
+----6 / 109-----
+batch loss: 1.023714
+batch yaw loss: 0.500000
+----7 / 109-----
+batch loss: 0.773918
+batch yaw loss: 30.500000
+----8 / 109-----
+batch loss: 0.000000
+batch yaw loss: 40.500000
+----9 / 109-----
+batch loss: 0.000000
+batch yaw loss: 21.500000
+----10 / 109-----
+batch loss: 12.866936
+batch yaw loss: 0.500000
+----11 / 109-----
+batch loss: 8.828407
+batch yaw loss: 9.000000
+----12 / 109-----
+batch loss: 11.613373
+batch yaw loss: 68.500000
+----13 / 109-----
+batch loss: 12.255440
+batch yaw loss: 83.000000
+----14 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----15 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----16 / 109-----
+batch loss: 0.000000
+batch yaw loss: 81.500000
+----17 / 109-----
+batch loss: 0.000000
+batch yaw loss: 10.000000
+----18 / 109-----
+batch loss: 12.235626
+batch yaw loss: 0.500000
+----19 / 109-----
+batch loss: 0.518295
+batch yaw loss: 11.000000
+----20 / 109-----
+batch loss: 0.000000
+batch yaw loss: 13.000000
+----21 / 109-----
+batch loss: 6.572350
+batch yaw loss: 63.500000
+----22 / 109-----
+batch loss: 0.000000
+batch yaw loss: 8.000000
+----23 / 109-----
+batch loss: 8.913436
+batch yaw loss: 0.000000
+----24 / 109-----
+batch loss: 5.243889
+batch yaw loss: 47.000000
+----25 / 109-----
+batch loss: 11.745338
+batch yaw loss: 4.500000
+----26 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----27 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----28 / 109-----
+batch loss: 12.952799
+batch yaw loss: 2.500000
+----29 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----30 / 109-----
+batch loss: 7.174732
+batch yaw loss: 1.000000
+----31 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----32 / 109-----
+batch loss: 1.905933
+batch yaw loss: 0.500000
+----33 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----34 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----35 / 109-----
+batch loss: 4.453938
+batch yaw loss: 4.000000
+----36 / 109-----
+batch loss: 7.161324
+batch yaw loss: 8.000000
+----37 / 109-----
+batch loss: 0.000000
+batch yaw loss: 23.000000
+----38 / 109-----
+batch loss: 5.576385
+batch yaw loss: 29.000000
+----39 / 109-----
+batch loss: 0.788765
+batch yaw loss: 1.000000
+----40 / 109-----
+batch loss: 0.000000
+batch yaw loss: 39.500000
+----41 / 109-----
+batch loss: 5.842224
+batch yaw loss: 7.000000
+----42 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.000000
+----43 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.500000
+----44 / 109-----
+batch loss: 1.085907
+batch yaw loss: 34.500000
+----45 / 109-----
+batch loss: 0.000000
+batch yaw loss: 15.500000
+----46 / 109-----
+batch loss: 0.742508
+batch yaw loss: 6.500000
+----47 / 109-----
+batch loss: 4.008621
+batch yaw loss: 32.000000
+----48 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----49 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----50 / 109-----
+batch loss: 13.937443
+batch yaw loss: 2.500000
+----51 / 109-----
+batch loss: 3.120449
+batch yaw loss: 2.500000
+----52 / 109-----
+batch loss: 1.295883
+batch yaw loss: 1.000000
+----53-----
+----FAULTY TUPLE-----
+----54 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----55 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----56 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----57 / 109-----
+batch loss: 5.810558
+batch yaw loss: 1.000000
+----58 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----59 / 109-----
+batch loss: 12.367607
+batch yaw loss: 2.000000
+----60 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----61 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.500000
+----62 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----63 / 109-----
+batch loss: 18.444349
+batch yaw loss: 31.000000
+----64 / 109-----
+batch loss: 16.918839
+batch yaw loss: 38.500000
+----65 / 109-----
+batch loss: 0.000000
+batch yaw loss: 12.500000
+----66-----
+----FAULTY TUPLE-----
+----67 / 109-----
+batch loss: 1.159920
+batch yaw loss: 1.000000
+----68 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----69 / 109-----
+batch loss: 2.002495
+batch yaw loss: 3.000000
+----70 / 109-----
+batch loss: 4.178838
+batch yaw loss: 0.500000
+----71 / 109-----
+batch loss: 11.480659
+batch yaw loss: 2.000000
+----72 / 109-----
+batch loss: 20.681112
+batch yaw loss: 3.500000
+----73 / 109-----
+batch loss: 13.954079
+batch yaw loss: 1.500000
+----74 / 109-----
+batch loss: 5.268089
+batch yaw loss: 10.000000
+----75 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----76 / 109-----
+batch loss: 11.022980
+batch yaw loss: 0.500000
+----77 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----78 / 109-----
+batch loss: 0.806885
+batch yaw loss: 4.500000
+----79 / 109-----
+batch loss: 0.539391
+batch yaw loss: 30.000000
+----80 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----81 / 109-----
+batch loss: 0.434967
+batch yaw loss: 38.500000
+----82 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----83 / 109-----
+batch loss: 0.543686
+batch yaw loss: 1.000000
+----84 / 109-----
+batch loss: 3.820084
+batch yaw loss: 3.500000
+----85 / 109-----
+batch loss: 8.348659
+batch yaw loss: 1.500000
+----86 / 109-----
+batch loss: 0.810684
+batch yaw loss: 28.000000
+----87 / 109-----
+batch loss: 11.247750
+batch yaw loss: 2.500000
+----88 / 109-----
+batch loss: 0.025192
+batch yaw loss: 2.500000
+----89 / 109-----
+batch loss: 3.654961
+batch yaw loss: 35.500000
+----90 / 109-----
+batch loss: 22.148193
+batch yaw loss: 2.000000
+----91 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.500000
+----92 / 109-----
+batch loss: 7.667587
+batch yaw loss: 18.500000
+----93 / 109-----
+batch loss: 0.166367
+batch yaw loss: 0.500000
+----94 / 109-----
+batch loss: 0.000000
+batch yaw loss: 59.500000
+----95 / 109-----
+batch loss: 5.531729
+batch yaw loss: 0.000000
+----96 / 109-----
+batch loss: 0.510443
+batch yaw loss: 1.500000
+----97 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----98 / 109-----
+batch loss: 0.000000
+batch yaw loss: 15.000000
+----99 / 109-----
+batch loss: 1.362234
+batch yaw loss: 0.500000
+----100 / 109-----
+batch loss: 10.742014
+batch yaw loss: 8.500000
+----101 / 109-----
+batch loss: 0.000000
+batch yaw loss: 37.500000
+----102 / 109-----
+batch loss: 3.941700
+batch yaw loss: 78.500000
+----103 / 109-----
+batch loss: 6.519409
+batch yaw loss: 19.000000
+----104 / 109-----
+batch loss: 19.062927
+batch yaw loss: 36.000000
+----105 / 109-----
+batch loss: 1.051907
+batch yaw loss: 4.000000
+----106 / 109-----
+batch loss: 0.000000
+batch yaw loss: 18.500000
+----107 / 109-----
+batch loss: 0.452906
+batch yaw loss: 1.000000
+----108 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 007/ 20 ****
+----0 / 109-----
+batch loss: 2.684905
+batch yaw loss: 0.500000
+----1 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----2 / 109-----
+batch loss: 2.021820
+batch yaw loss: 17.500000
+----3-----
+----FAULTY TUPLE-----
+----4 / 109-----
+batch loss: 14.881073
+batch yaw loss: 4.500000
+----5 / 109-----
+batch loss: 1.506844
+batch yaw loss: 1.500000
+----6 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----7 / 109-----
+batch loss: 0.992458
+batch yaw loss: 1.500000
+----8 / 109-----
+batch loss: 1.713921
+batch yaw loss: 33.000000
+----9 / 109-----
+batch loss: 7.135593
+batch yaw loss: 33.500000
+----10 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.000000
+----11 / 109-----
+batch loss: 11.990952
+batch yaw loss: 11.000000
+----12 / 109-----
+batch loss: 11.282799
+batch yaw loss: 7.000000
+----13 / 109-----
+batch loss: 0.857445
+batch yaw loss: 10.500000
+----14 / 109-----
+batch loss: 4.954773
+batch yaw loss: 1.000000
+----15 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----16 / 109-----
+batch loss: 1.270777
+batch yaw loss: 2.000000
+----17 / 109-----
+batch loss: 3.894165
+batch yaw loss: 10.000000
+----18 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----19 / 109-----
+batch loss: 12.717289
+batch yaw loss: 1.000000
+----20 / 109-----
+batch loss: 0.573021
+batch yaw loss: 40.000000
+----21 / 109-----
+batch loss: 3.399048
+batch yaw loss: 1.000000
+----22 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----23 / 109-----
+batch loss: 7.805611
+batch yaw loss: 2.000000
+----24 / 109-----
+batch loss: 0.000000
+batch yaw loss: 15.000000
+----25 / 109-----
+batch loss: 1.636429
+batch yaw loss: 57.500000
+----26 / 109-----
+batch loss: 0.000000
+batch yaw loss: 52.500000
+----27 / 109-----
+batch loss: 14.977310
+batch yaw loss: 1.000000
+----28 / 109-----
+batch loss: 12.157993
+batch yaw loss: 0.500000
+----29 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----30 / 109-----
+batch loss: 0.087624
+batch yaw loss: 8.500000
+----31 / 109-----
+batch loss: 0.206299
+batch yaw loss: 0.000000
+----32 / 109-----
+batch loss: 2.129410
+batch yaw loss: 3.000000
+----33 / 109-----
+batch loss: 6.690033
+batch yaw loss: 4.000000
+----34 / 109-----
+batch loss: 0.000000
+batch yaw loss: 8.000000
+----35 / 109-----
+batch loss: 10.844854
+batch yaw loss: 0.500000
+----36 / 109-----
+batch loss: 1.628262
+batch yaw loss: 4.000000
+----37 / 109-----
+batch loss: 0.000000
+batch yaw loss: 30.500000
+----38 / 109-----
+batch loss: 6.605644
+batch yaw loss: 54.000000
+----39 / 109-----
+batch loss: 0.098015
+batch yaw loss: 7.500000
+----40 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----41 / 109-----
+batch loss: 3.946075
+batch yaw loss: 58.500000
+----42 / 109-----
+batch loss: 0.000000
+batch yaw loss: 61.000000
+----43 / 109-----
+batch loss: 14.380203
+batch yaw loss: 0.500000
+----44-----
+----FAULTY TUPLE-----
+----45 / 109-----
+batch loss: 0.000000
+batch yaw loss: 12.500000
+----46 / 109-----
+batch loss: 11.334702
+batch yaw loss: 1.000000
+----47 / 109-----
+batch loss: 3.558150
+batch yaw loss: 3.000000
+----48 / 109-----
+batch loss: 0.747185
+batch yaw loss: 3.000000
+----49 / 109-----
+batch loss: 0.000000
+batch yaw loss: 40.500000
+----50 / 109-----
+batch loss: 0.000000
+batch yaw loss: 79.000000
+----51 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----52 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----53 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----54 / 109-----
+batch loss: 12.250534
+batch yaw loss: 15.000000
+----55 / 109-----
+batch loss: 0.000000
+batch yaw loss: 44.500000
+----56 / 109-----
+batch loss: 8.519646
+batch yaw loss: 1.000000
+----57 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----58 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----59 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----60 / 109-----
+batch loss: 12.101614
+batch yaw loss: 26.000000
+----61 / 109-----
+batch loss: 12.000046
+batch yaw loss: 2.500000
+----62 / 109-----
+batch loss: 0.246098
+batch yaw loss: 12.000000
+----63 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----64 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----65 / 109-----
+batch loss: 10.006798
+batch yaw loss: 7.000000
+----66 / 109-----
+batch loss: 10.867352
+batch yaw loss: 0.500000
+----67 / 109-----
+batch loss: 1.642578
+batch yaw loss: 37.500000
+----68 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----69 / 109-----
+batch loss: 16.507317
+batch yaw loss: 10.000000
+----70 / 109-----
+batch loss: 0.854477
+batch yaw loss: 48.500000
+----71 / 109-----
+batch loss: 0.820816
+batch yaw loss: 1.000000
+----72 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----73 / 109-----
+batch loss: 2.032282
+batch yaw loss: 0.000000
+----74 / 109-----
+batch loss: 0.327560
+batch yaw loss: 32.500000
+----75 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----76 / 109-----
+batch loss: 0.229889
+batch yaw loss: 0.000000
+----77 / 109-----
+batch loss: 0.000000
+batch yaw loss: 30.000000
+----78 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----79 / 109-----
+batch loss: 3.326965
+batch yaw loss: 1.000000
+----80 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----81 / 109-----
+batch loss: 8.249680
+batch yaw loss: 1.000000
+----82 / 109-----
+batch loss: 0.000000
+batch yaw loss: 29.500000
+----83 / 109-----
+batch loss: 2.276230
+batch yaw loss: 0.500000
+----84 / 109-----
+batch loss: 1.144741
+batch yaw loss: 7.500000
+----85 / 109-----
+batch loss: 10.525410
+batch yaw loss: 1.500000
+----86 / 109-----
+batch loss: 4.916870
+batch yaw loss: 50.000000
+----87 / 109-----
+batch loss: 3.541634
+batch yaw loss: 26.500000
+----88 / 109-----
+batch loss: 6.002556
+batch yaw loss: 18.500000
+----89 / 109-----
+batch loss: 0.000000
+batch yaw loss: 18.500000
+----90 / 109-----
+batch loss: 2.696747
+batch yaw loss: 1.000000
+----91 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.000000
+----92 / 109-----
+batch loss: 1.585724
+batch yaw loss: 8.000000
+----93 / 109-----
+batch loss: 3.500721
+batch yaw loss: 4.000000
+----94 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----95 / 109-----
+batch loss: 1.373428
+batch yaw loss: 116.000000
+----96 / 109-----
+batch loss: 23.925465
+batch yaw loss: 29.000000
+----97 / 109-----
+batch loss: 9.934882
+batch yaw loss: 1.000000
+----98 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----99 / 109-----
+batch loss: 14.369392
+batch yaw loss: 1.000000
+----100 / 109-----
+batch loss: 1.345837
+batch yaw loss: 1.000000
+----101 / 109-----
+batch loss: 15.981461
+batch yaw loss: 2.000000
+----102 / 109-----
+batch loss: 1.420656
+batch yaw loss: 45.500000
+----103 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----104 / 109-----
+batch loss: 1.109518
+batch yaw loss: 1.000000
+----105 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----106 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----107 / 109-----
+batch loss: 14.997832
+batch yaw loss: 31.000000
+----108 / 109-----
+batch loss: 3.178413
+batch yaw loss: 4.500000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 008/ 20 ****
+----0 / 109-----
+batch loss: 21.008179
+batch yaw loss: 0.000000
+----1 / 109-----
+batch loss: 0.000000
+batch yaw loss: 10.000000
+----2 / 109-----
+batch loss: 10.873573
+batch yaw loss: 32.000000
+----3 / 109-----
+batch loss: 3.524712
+batch yaw loss: 22.000000
+----4 / 109-----
+batch loss: 3.581001
+batch yaw loss: 5.000000
+----5 / 109-----
+batch loss: 3.397629
+batch yaw loss: 80.500000
+----6 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----7 / 109-----
+batch loss: 7.202175
+batch yaw loss: 63.000000
+----8 / 109-----
+batch loss: 15.091046
+batch yaw loss: 0.000000
+----9 / 109-----
+batch loss: 0.000000
+batch yaw loss: 11.000000
+----10 / 109-----
+batch loss: 10.422813
+batch yaw loss: 36.500000
+----11 / 109-----
+batch loss: 3.767029
+batch yaw loss: 25.500000
+----12 / 109-----
+batch loss: 17.871632
+batch yaw loss: 59.500000
+----13 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----14 / 109-----
+batch loss: 0.167229
+batch yaw loss: 2.000000
+----15 / 109-----
+batch loss: 0.154509
+batch yaw loss: 30.500000
+----16 / 109-----
+batch loss: 0.570717
+batch yaw loss: 1.000000
+----17 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----18 / 109-----
+batch loss: 9.531326
+batch yaw loss: 16.000000
+----19 / 109-----
+batch loss: 13.578533
+batch yaw loss: 7.000000
+----20 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----21 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----22 / 109-----
+batch loss: 6.003929
+batch yaw loss: 6.500000
+----23 / 109-----
+batch loss: 0.428337
+batch yaw loss: 17.500000
+----24 / 109-----
+batch loss: 0.729828
+batch yaw loss: 1.000000
+----25 / 109-----
+batch loss: 0.000000
+batch yaw loss: 35.000000
+----26-----
+----FAULTY TUPLE-----
+----27 / 109-----
+batch loss: 10.919502
+batch yaw loss: 0.500000
+----28 / 109-----
+batch loss: 12.038593
+batch yaw loss: 6.500000
+----29 / 109-----
+batch loss: 17.981411
+batch yaw loss: 19.500000
+----30-----
+----FAULTY TUPLE-----
+----31 / 109-----
+batch loss: 5.073273
+batch yaw loss: 41.000000
+----32 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----33 / 109-----
+batch loss: 10.346457
+batch yaw loss: 1.000000
+----34 / 109-----
+batch loss: 12.343067
+batch yaw loss: 0.500000
+----35 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----36 / 109-----
+batch loss: 0.980110
+batch yaw loss: 5.500000
+----37 / 109-----
+batch loss: 15.127815
+batch yaw loss: 8.500000
+----38 / 109-----
+batch loss: 7.591263
+batch yaw loss: 33.000000
+----39 / 109-----
+batch loss: 3.789438
+batch yaw loss: 0.500000
+----40 / 109-----
+batch loss: 2.274269
+batch yaw loss: 1.500000
+----41 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----42 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.500000
+----43 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----44 / 109-----
+batch loss: 15.926057
+batch yaw loss: 0.000000
+----45 / 109-----
+batch loss: 24.580292
+batch yaw loss: 38.000000
+----46 / 109-----
+batch loss: 12.182632
+batch yaw loss: 16.000000
+----47 / 109-----
+batch loss: 8.568867
+batch yaw loss: 1.000000
+----48 / 109-----
+batch loss: 8.209702
+batch yaw loss: 1.000000
+----49 / 109-----
+batch loss: 10.289907
+batch yaw loss: 0.500000
+----50 / 109-----
+batch loss: 5.991909
+batch yaw loss: 0.500000
+----51 / 109-----
+batch loss: 0.719643
+batch yaw loss: 3.000000
+----52 / 109-----
+batch loss: 1.427589
+batch yaw loss: 1.000000
+----53 / 109-----
+batch loss: 0.869751
+batch yaw loss: 8.500000
+----54 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----55 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----56 / 109-----
+batch loss: 0.000000
+batch yaw loss: 10.500000
+----57 / 109-----
+batch loss: 0.182071
+batch yaw loss: 1.500000
+----58 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----59 / 109-----
+batch loss: 6.738071
+batch yaw loss: 11.500000
+----60 / 109-----
+batch loss: 0.806660
+batch yaw loss: 58.500000
+----61 / 109-----
+batch loss: 0.000000
+batch yaw loss: 33.500000
+----62 / 109-----
+batch loss: 11.080759
+batch yaw loss: 1.500000
+----63 / 109-----
+batch loss: 11.412090
+batch yaw loss: 2.000000
+----64 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----65 / 109-----
+batch loss: 12.671616
+batch yaw loss: 1.500000
+----66 / 109-----
+batch loss: 2.232450
+batch yaw loss: 33.000000
+----67 / 109-----
+batch loss: 3.400593
+batch yaw loss: 0.000000
+----68 / 109-----
+batch loss: 0.437611
+batch yaw loss: 6.500000
+----69 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----70 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----71 / 109-----
+batch loss: 0.000000
+batch yaw loss: 20.500000
+----72 / 109-----
+batch loss: 3.664442
+batch yaw loss: 1.500000
+----73 / 109-----
+batch loss: 2.755257
+batch yaw loss: 4.500000
+----74 / 109-----
+batch loss: 5.244267
+batch yaw loss: 1.000000
+----75 / 109-----
+batch loss: 8.143703
+batch yaw loss: 62.000000
+----76 / 109-----
+batch loss: 1.175262
+batch yaw loss: 3.500000
+----77 / 109-----
+batch loss: 0.000000
+batch yaw loss: 38.500000
+----78 / 109-----
+batch loss: 0.025730
+batch yaw loss: 6.500000
+----79 / 109-----
+batch loss: 8.715786
+batch yaw loss: 1.000000
+----80 / 109-----
+batch loss: 1.369526
+batch yaw loss: 14.500000
+----81 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----82 / 109-----
+batch loss: 0.507202
+batch yaw loss: 10.000000
+----83 / 109-----
+batch loss: 2.885681
+batch yaw loss: 1.000000
+----84 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----85 / 109-----
+batch loss: 10.154490
+batch yaw loss: 22.500000
+----86 / 109-----
+batch loss: 9.523392
+batch yaw loss: 29.000000
+----87 / 109-----
+batch loss: 8.504631
+batch yaw loss: 3.500000
+----88 / 109-----
+batch loss: 3.559589
+batch yaw loss: 0.500000
+----89 / 109-----
+batch loss: 6.376099
+batch yaw loss: 7.000000
+----90 / 109-----
+batch loss: 0.239655
+batch yaw loss: 15.500000
+----91 / 109-----
+batch loss: 0.346237
+batch yaw loss: 1.000000
+----92 / 109-----
+batch loss: 1.295482
+batch yaw loss: 0.000000
+----93 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----94 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----95 / 109-----
+batch loss: 11.564499
+batch yaw loss: 3.500000
+----96 / 109-----
+batch loss: 0.000000
+batch yaw loss: 27.500000
+----97 / 109-----
+batch loss: 13.236801
+batch yaw loss: 2.500000
+----98 / 109-----
+batch loss: 1.027916
+batch yaw loss: 2.500000
+----99 / 109-----
+batch loss: 2.728210
+batch yaw loss: 3.000000
+----100 / 109-----
+batch loss: 15.985451
+batch yaw loss: 1.000000
+----101 / 109-----
+batch loss: 10.604877
+batch yaw loss: 24.500000
+----102 / 109-----
+batch loss: 0.000000
+batch yaw loss: 7.500000
+----103 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.500000
+----104 / 109-----
+batch loss: 0.197636
+batch yaw loss: 29.000000
+----105 / 109-----
+batch loss: 0.765438
+batch yaw loss: 2.500000
+----106 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----107 / 109-----
+batch loss: 1.078729
+batch yaw loss: 1.000000
+----108 / 109-----
+batch loss: 2.439217
+batch yaw loss: 41.500000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 009/ 20 ****
+----0 / 109-----
+batch loss: 0.555113
+batch yaw loss: 0.500000
+----1 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----2 / 109-----
+batch loss: 3.327240
+batch yaw loss: 5.500000
+----3 / 109-----
+batch loss: 0.556499
+batch yaw loss: 9.500000
+----4 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----5 / 109-----
+batch loss: 11.303417
+batch yaw loss: 1.000000
+----6 / 109-----
+batch loss: 0.000000
+batch yaw loss: 30.500000
+----7 / 109-----
+batch loss: 8.470131
+batch yaw loss: 102.500000
+----8 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----9 / 109-----
+batch loss: 0.000000
+batch yaw loss: 41.000000
+----10 / 109-----
+batch loss: 0.207298
+batch yaw loss: 15.000000
+----11 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.500000
+----12 / 109-----
+batch loss: 0.471298
+batch yaw loss: 5.500000
+----13 / 109-----
+batch loss: 10.132339
+batch yaw loss: 29.500000
+----14 / 109-----
+batch loss: 5.928329
+batch yaw loss: 2.000000
+----15 / 109-----
+batch loss: 0.000000
+batch yaw loss: 32.500000
+----16 / 109-----
+batch loss: 0.593958
+batch yaw loss: 45.000000
+----17 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----18 / 109-----
+batch loss: 3.827267
+batch yaw loss: 65.000000
+----19 / 109-----
+batch loss: 3.414295
+batch yaw loss: 30.000000
+----20 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----21 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----22 / 109-----
+batch loss: 9.892574
+batch yaw loss: 0.500000
+----23 / 109-----
+batch loss: 1.977186
+batch yaw loss: 0.500000
+----24 / 109-----
+batch loss: 0.000000
+batch yaw loss: 36.000000
+----25 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----26 / 109-----
+batch loss: 20.923706
+batch yaw loss: 35.500000
+----27 / 109-----
+batch loss: 1.547874
+batch yaw loss: 36.500000
+----28 / 109-----
+batch loss: 0.809557
+batch yaw loss: 47.500000
+----29 / 109-----
+batch loss: 1.128235
+batch yaw loss: 1.500000
+----30 / 109-----
+batch loss: 0.594330
+batch yaw loss: 0.500000
+----31 / 109-----
+batch loss: 0.028992
+batch yaw loss: 4.500000
+----32 / 109-----
+batch loss: 1.747665
+batch yaw loss: 46.000000
+----33 / 109-----
+batch loss: 0.813231
+batch yaw loss: 0.500000
+----34 / 109-----
+batch loss: 3.490227
+batch yaw loss: 43.500000
+----35 / 109-----
+batch loss: 2.158356
+batch yaw loss: 2.000000
+----36 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----37 / 109-----
+batch loss: 0.586687
+batch yaw loss: 113.000000
+----38 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----39 / 109-----
+batch loss: 0.504232
+batch yaw loss: 0.000000
+----40 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----41 / 109-----
+batch loss: 5.730804
+batch yaw loss: 1.000000
+----42 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.000000
+----43 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----44 / 109-----
+batch loss: 11.198782
+batch yaw loss: 35.500000
+----45 / 109-----
+batch loss: 4.799103
+batch yaw loss: 1.000000
+----46 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----47 / 109-----
+batch loss: 0.608854
+batch yaw loss: 6.500000
+----48 / 109-----
+batch loss: 6.166886
+batch yaw loss: 0.000000
+----49-----
+----FAULTY TUPLE-----
+----50 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----51 / 109-----
+batch loss: 0.779137
+batch yaw loss: 25.000000
+----52 / 109-----
+batch loss: 0.140083
+batch yaw loss: 0.500000
+----53 / 109-----
+batch loss: 7.203194
+batch yaw loss: 0.500000
+----54 / 109-----
+batch loss: 1.475319
+batch yaw loss: 1.000000
+----55 / 109-----
+batch loss: 4.742317
+batch yaw loss: 1.000000
+----56 / 109-----
+batch loss: 10.537094
+batch yaw loss: 30.000000
+----57 / 109-----
+batch loss: 3.846809
+batch yaw loss: 43.500000
+----58 / 109-----
+batch loss: 2.259480
+batch yaw loss: 2.500000
+----59-----
+----FAULTY TUPLE-----
+----60 / 109-----
+batch loss: 0.000000
+batch yaw loss: 28.500000
+----61 / 109-----
+batch loss: 10.535774
+batch yaw loss: 7.500000
+----62 / 109-----
+batch loss: 0.270546
+batch yaw loss: 11.500000
+----63 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----64 / 109-----
+batch loss: 4.649989
+batch yaw loss: 1.500000
+----65 / 109-----
+batch loss: 0.000000
+batch yaw loss: 18.000000
+----66 / 109-----
+batch loss: 0.000000
+batch yaw loss: 58.500000
+----67 / 109-----
+batch loss: 5.142269
+batch yaw loss: 31.000000
+----68 / 109-----
+batch loss: 0.195526
+batch yaw loss: 1.500000
+----69 / 109-----
+batch loss: 3.721741
+batch yaw loss: 1.000000
+----70 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----71 / 109-----
+batch loss: 6.101494
+batch yaw loss: 58.500000
+----72 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----73 / 109-----
+batch loss: 3.538960
+batch yaw loss: 0.500000
+----74 / 109-----
+batch loss: 1.150265
+batch yaw loss: 2.000000
+----75 / 109-----
+batch loss: 0.549441
+batch yaw loss: 0.000000
+----76 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.500000
+----77 / 109-----
+batch loss: 11.127283
+batch yaw loss: 0.500000
+----78 / 109-----
+batch loss: 0.000000
+batch yaw loss: 68.000000
+----79 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----80 / 109-----
+batch loss: 1.820786
+batch yaw loss: 4.000000
+----81 / 109-----
+batch loss: 14.249332
+batch yaw loss: 30.500000
+----82 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----83 / 109-----
+batch loss: 0.294495
+batch yaw loss: 27.000000
+----84 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----85 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----86 / 109-----
+batch loss: 0.000000
+batch yaw loss: 40.500000
+----87 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----88 / 109-----
+batch loss: 0.000000
+batch yaw loss: 30.500000
+----89 / 109-----
+batch loss: 1.590264
+batch yaw loss: 6.000000
+----90 / 109-----
+batch loss: 0.000000
+batch yaw loss: 12.000000
+----91 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----92 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----93 / 109-----
+batch loss: 1.829124
+batch yaw loss: 4.000000
+----94 / 109-----
+batch loss: 9.761509
+batch yaw loss: 0.500000
+----95 / 109-----
+batch loss: 4.809551
+batch yaw loss: 2.000000
+----96 / 109-----
+batch loss: 2.689486
+batch yaw loss: 10.000000
+----97 / 109-----
+batch loss: 4.748489
+batch yaw loss: 1.500000
+----98 / 109-----
+batch loss: 0.000000
+batch yaw loss: 11.000000
+----99 / 109-----
+batch loss: 12.095605
+batch yaw loss: 0.000000
+----100 / 109-----
+batch loss: 2.100410
+batch yaw loss: 70.500000
+----101 / 109-----
+batch loss: 0.383057
+batch yaw loss: 92.000000
+----102 / 109-----
+batch loss: 0.000000
+batch yaw loss: 14.500000
+----103 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----104 / 109-----
+batch loss: 8.255989
+batch yaw loss: 2.000000
+----105 / 109-----
+batch loss: 0.000000
+batch yaw loss: 32.500000
+----106 / 109-----
+batch loss: 1.545361
+batch yaw loss: 31.500000
+----107 / 109-----
+batch loss: 0.790020
+batch yaw loss: 10.500000
+----108 / 109-----
+batch loss: 1.150749
+batch yaw loss: 65.500000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 010/ 20 ****
+----0 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----1 / 109-----
+batch loss: 1.199646
+batch yaw loss: 1.000000
+----2 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----3 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----4 / 109-----
+batch loss: 2.149757
+batch yaw loss: 16.500000
+----5 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----6 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----7 / 109-----
+batch loss: 27.182121
+batch yaw loss: 14.500000
+----8 / 109-----
+batch loss: 1.061026
+batch yaw loss: 0.500000
+----9 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----10 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----11 / 109-----
+batch loss: 10.979256
+batch yaw loss: 30.500000
+----12 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----13-----
+----FAULTY TUPLE-----
+----14 / 109-----
+batch loss: 2.678028
+batch yaw loss: 2.000000
+----15 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----16 / 109-----
+batch loss: 9.006828
+batch yaw loss: 2.000000
+----17 / 109-----
+batch loss: 0.000000
+batch yaw loss: 45.000000
+----18 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----19 / 109-----
+batch loss: 1.010986
+batch yaw loss: 7.500000
+----20 / 109-----
+batch loss: 10.572105
+batch yaw loss: 7.000000
+----21 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----22 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----23 / 109-----
+batch loss: 0.000000
+batch yaw loss: 13.500000
+----24 / 109-----
+batch loss: 8.900520
+batch yaw loss: 0.500000
+----25 / 109-----
+batch loss: 1.167770
+batch yaw loss: 18.000000
+----26 / 109-----
+batch loss: 4.927757
+batch yaw loss: 26.000000
+----27 / 109-----
+batch loss: 0.000000
+batch yaw loss: 28.000000
+----28 / 109-----
+batch loss: 0.000000
+batch yaw loss: 35.500000
+----29 / 109-----
+batch loss: 0.692810
+batch yaw loss: 10.500000
+----30 / 109-----
+batch loss: 0.690048
+batch yaw loss: 1.000000
+----31 / 109-----
+batch loss: 10.270615
+batch yaw loss: 24.000000
+----32 / 109-----
+batch loss: 12.047478
+batch yaw loss: 4.000000
+----33 / 109-----
+batch loss: 0.689953
+batch yaw loss: 6.000000
+----34 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----35 / 109-----
+batch loss: 1.571976
+batch yaw loss: 5.000000
+----36 / 109-----
+batch loss: 5.161343
+batch yaw loss: 9.500000
+----37 / 109-----
+batch loss: 2.054401
+batch yaw loss: 0.500000
+----38 / 109-----
+batch loss: 17.659653
+batch yaw loss: 39.500000
+----39 / 109-----
+batch loss: 0.748737
+batch yaw loss: 1.500000
+----40 / 109-----
+batch loss: 0.645248
+batch yaw loss: 8.000000
+----41 / 109-----
+batch loss: 10.294777
+batch yaw loss: 16.500000
+----42 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----43 / 109-----
+batch loss: 7.564527
+batch yaw loss: 0.000000
+----44 / 109-----
+batch loss: 4.417816
+batch yaw loss: 30.000000
+----45 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----46 / 109-----
+batch loss: 20.176769
+batch yaw loss: 1.000000
+----47 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.000000
+----48 / 109-----
+batch loss: 10.427753
+batch yaw loss: 7.000000
+----49 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----50 / 109-----
+batch loss: 10.583591
+batch yaw loss: 54.000000
+----51 / 109-----
+batch loss: 3.549011
+batch yaw loss: 14.500000
+----52 / 109-----
+batch loss: 14.751144
+batch yaw loss: 25.500000
+----53 / 109-----
+batch loss: 0.000000
+batch yaw loss: 7.500000
+----54 / 109-----
+batch loss: 0.000000
+batch yaw loss: 7.000000
+----55 / 109-----
+batch loss: 4.173103
+batch yaw loss: 46.000000
+----56 / 109-----
+batch loss: 9.799557
+batch yaw loss: 30.000000
+----57 / 109-----
+batch loss: 0.000000
+batch yaw loss: 30.000000
+----58 / 109-----
+batch loss: 2.832039
+batch yaw loss: 90.500000
+----59 / 109-----
+batch loss: 0.000000
+batch yaw loss: 33.500000
+----60 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----61 / 109-----
+batch loss: 9.202900
+batch yaw loss: 1.500000
+----62 / 109-----
+batch loss: 0.709797
+batch yaw loss: 2.000000
+----63 / 109-----
+batch loss: 1.834049
+batch yaw loss: 29.000000
+----64 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.000000
+----65 / 109-----
+batch loss: 8.854553
+batch yaw loss: 1.500000
+----66 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----67 / 109-----
+batch loss: 13.906090
+batch yaw loss: 1.500000
+----68 / 109-----
+batch loss: 0.000000
+batch yaw loss: 30.500000
+----69 / 109-----
+batch loss: 0.000000
+batch yaw loss: 26.000000
+----70 / 109-----
+batch loss: 1.074593
+batch yaw loss: 6.500000
+----71 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.500000
+----72 / 109-----
+batch loss: 2.701262
+batch yaw loss: 2.500000
+----73 / 109-----
+batch loss: 0.156597
+batch yaw loss: 1.500000
+----74 / 109-----
+batch loss: 0.533146
+batch yaw loss: 0.500000
+----75-----
+----FAULTY TUPLE-----
+----76 / 109-----
+batch loss: 10.808804
+batch yaw loss: 27.500000
+----77 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----78 / 109-----
+batch loss: 10.206215
+batch yaw loss: 1.000000
+----79 / 109-----
+batch loss: 10.786552
+batch yaw loss: 1.500000
+----80 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----81 / 109-----
+batch loss: 11.907482
+batch yaw loss: 2.500000
+----82 / 109-----
+batch loss: 11.544286
+batch yaw loss: 0.000000
+----83 / 109-----
+batch loss: 0.000000
+batch yaw loss: 14.000000
+----84 / 109-----
+batch loss: 0.183092
+batch yaw loss: 3.500000
+----85 / 109-----
+batch loss: 2.900009
+batch yaw loss: 19.500000
+----86 / 109-----
+batch loss: 1.018356
+batch yaw loss: 57.000000
+----87 / 109-----
+batch loss: 1.826515
+batch yaw loss: 21.000000
+----88 / 109-----
+batch loss: 3.418418
+batch yaw loss: 0.000000
+----89 / 109-----
+batch loss: 1.492961
+batch yaw loss: 1.000000
+----90 / 109-----
+batch loss: 0.976463
+batch yaw loss: 3.500000
+----91 / 109-----
+batch loss: 1.139387
+batch yaw loss: 0.000000
+----92 / 109-----
+batch loss: 0.924648
+batch yaw loss: 3.500000
+----93 / 109-----
+batch loss: 0.659676
+batch yaw loss: 72.000000
+----94 / 109-----
+batch loss: 0.131424
+batch yaw loss: 1.500000
+----95 / 109-----
+batch loss: 16.400490
+batch yaw loss: 57.500000
+----96 / 109-----
+batch loss: 0.302406
+batch yaw loss: 23.500000
+----97 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----98 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.500000
+----99 / 109-----
+batch loss: 3.590595
+batch yaw loss: 1.000000
+----100 / 109-----
+batch loss: 23.949440
+batch yaw loss: 79.000000
+----101 / 109-----
+batch loss: 0.000000
+batch yaw loss: 45.500000
+----102 / 109-----
+batch loss: 4.420464
+batch yaw loss: 41.000000
+----103 / 109-----
+batch loss: 12.432546
+batch yaw loss: 1.500000
+----104 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----105 / 109-----
+batch loss: 6.040495
+batch yaw loss: 1.500000
+----106 / 109-----
+batch loss: 6.615814
+batch yaw loss: 1.500000
+----107 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----108 / 109-----
+batch loss: 0.000000
+batch yaw loss: 56.500000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 011/ 20 ****
+----0 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.000000
+----1 / 109-----
+batch loss: 0.170483
+batch yaw loss: 28.500000
+----2 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----3 / 109-----
+batch loss: 0.239029
+batch yaw loss: 5.500000
+----4 / 109-----
+batch loss: 4.790634
+batch yaw loss: 2.500000
+----5 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----6 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----7 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----8 / 109-----
+batch loss: 15.787706
+batch yaw loss: 55.500000
+----9 / 109-----
+batch loss: 0.000000
+batch yaw loss: 29.500000
+----10 / 109-----
+batch loss: 10.329582
+batch yaw loss: 2.500000
+----11 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----12 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----13 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----14 / 109-----
+batch loss: 9.611046
+batch yaw loss: 12.500000
+----15 / 109-----
+batch loss: 1.517166
+batch yaw loss: 33.500000
+----16 / 109-----
+batch loss: 0.000000
+batch yaw loss: 29.500000
+----17 / 109-----
+batch loss: 17.115334
+batch yaw loss: 14.500000
+----18 / 109-----
+batch loss: 1.224895
+batch yaw loss: 1.500000
+----19 / 109-----
+batch loss: 8.402180
+batch yaw loss: 2.000000
+----20 / 109-----
+batch loss: 5.811646
+batch yaw loss: 2.000000
+----21 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----22 / 109-----
+batch loss: 0.091670
+batch yaw loss: 0.000000
+----23 / 109-----
+batch loss: 0.129761
+batch yaw loss: 31.000000
+----24 / 109-----
+batch loss: 0.000000
+batch yaw loss: 35.500000
+----25 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----26 / 109-----
+batch loss: 4.272194
+batch yaw loss: 74.000000
+----27 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----28 / 109-----
+batch loss: 0.000000
+batch yaw loss: 21.000000
+----29 / 109-----
+batch loss: 2.256496
+batch yaw loss: 41.000000
+----30 / 109-----
+batch loss: 0.000000
+batch yaw loss: 16.500000
+----31 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.500000
+----32 / 109-----
+batch loss: 0.014980
+batch yaw loss: 49.500000
+----33 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----34 / 109-----
+batch loss: 0.191414
+batch yaw loss: 1.000000
+----35 / 109-----
+batch loss: 1.334604
+batch yaw loss: 1.000000
+----36 / 109-----
+batch loss: 4.100502
+batch yaw loss: 1.000000
+----37 / 109-----
+batch loss: 0.000000
+batch yaw loss: 17.000000
+----38 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----39 / 109-----
+batch loss: 0.373259
+batch yaw loss: 0.000000
+----40 / 109-----
+batch loss: 0.000000
+batch yaw loss: 65.500000
+----41 / 109-----
+batch loss: 12.733238
+batch yaw loss: 0.500000
+----42 / 109-----
+batch loss: 3.439995
+batch yaw loss: 5.500000
+----43 / 109-----
+batch loss: 4.453497
+batch yaw loss: 2.000000
+----44 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----45 / 109-----
+batch loss: 1.293861
+batch yaw loss: 0.500000
+----46 / 109-----
+batch loss: 19.894674
+batch yaw loss: 1.000000
+----47 / 109-----
+batch loss: 28.489502
+batch yaw loss: 16.000000
+----48 / 109-----
+batch loss: 0.000000
+batch yaw loss: 55.000000
+----49 / 109-----
+batch loss: 0.852400
+batch yaw loss: 1.500000
+----50 / 109-----
+batch loss: 0.518038
+batch yaw loss: 1.000000
+----51 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----52 / 109-----
+batch loss: 1.324654
+batch yaw loss: 1.500000
+----53 / 109-----
+batch loss: 0.817150
+batch yaw loss: 78.000000
+----54 / 109-----
+batch loss: 0.505804
+batch yaw loss: 1.000000
+----55 / 109-----
+batch loss: 0.442976
+batch yaw loss: 0.500000
+----56 / 109-----
+batch loss: 11.294338
+batch yaw loss: 53.000000
+----57 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----58 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----59 / 109-----
+batch loss: 1.809431
+batch yaw loss: 5.500000
+----60-----
+----FAULTY TUPLE-----
+----61 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----62 / 109-----
+batch loss: 2.812695
+batch yaw loss: 6.500000
+----63 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----64 / 109-----
+batch loss: 5.720097
+batch yaw loss: 5.500000
+----65 / 109-----
+batch loss: 6.936760
+batch yaw loss: 51.000000
+----66 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----67 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----68 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----69 / 109-----
+batch loss: 0.000000
+batch yaw loss: 34.000000
+----70 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----71 / 109-----
+batch loss: 0.286209
+batch yaw loss: 2.000000
+----72 / 109-----
+batch loss: 0.222775
+batch yaw loss: 0.000000
+----73 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----74 / 109-----
+batch loss: 28.663548
+batch yaw loss: 2.000000
+----75 / 109-----
+batch loss: 0.348331
+batch yaw loss: 7.500000
+----76 / 109-----
+batch loss: 2.140083
+batch yaw loss: 5.000000
+----77 / 109-----
+batch loss: 16.347561
+batch yaw loss: 28.000000
+----78-----
+----FAULTY TUPLE-----
+----79 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----80 / 109-----
+batch loss: 0.656515
+batch yaw loss: 6.500000
+----81 / 109-----
+batch loss: 0.000000
+batch yaw loss: 30.000000
+----82 / 109-----
+batch loss: 0.000000
+batch yaw loss: 107.500000
+----83 / 109-----
+batch loss: 16.385937
+batch yaw loss: 0.000000
+----84 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----85 / 109-----
+batch loss: 0.000000
+batch yaw loss: 45.500000
+----86 / 109-----
+batch loss: 0.687042
+batch yaw loss: 2.000000
+----87 / 109-----
+batch loss: 0.000000
+batch yaw loss: 61.500000
+----88 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----89 / 109-----
+batch loss: 10.322708
+batch yaw loss: 13.000000
+----90 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----91 / 109-----
+batch loss: 1.656592
+batch yaw loss: 2.500000
+----92 / 109-----
+batch loss: 0.347572
+batch yaw loss: 3.000000
+----93 / 109-----
+batch loss: 0.480865
+batch yaw loss: 49.500000
+----94 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----95 / 109-----
+batch loss: 0.000000
+batch yaw loss: 61.000000
+----96 / 109-----
+batch loss: 10.482727
+batch yaw loss: 83.500000
+----97 / 109-----
+batch loss: 3.091774
+batch yaw loss: 8.000000
+----98 / 109-----
+batch loss: 7.948903
+batch yaw loss: 0.500000
+----99 / 109-----
+batch loss: 0.000000
+batch yaw loss: 68.500000
+----100 / 109-----
+batch loss: 2.639919
+batch yaw loss: 10.500000
+----101 / 109-----
+batch loss: 0.462620
+batch yaw loss: 3.500000
+----102 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----103 / 109-----
+batch loss: 0.838509
+batch yaw loss: 2.000000
+----104 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----105 / 109-----
+batch loss: 18.661972
+batch yaw loss: 15.000000
+----106 / 109-----
+batch loss: 4.402901
+batch yaw loss: 5.000000
+----107 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----108 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+EVALUATING...
+EVAL RECALL: 2.0915032679738563
+**** EPOCH 012/ 20 ****
+----0 / 109-----
+batch loss: 9.959667
+batch yaw loss: 1.500000
+----1 / 109-----
+batch loss: 1.305723
+batch yaw loss: 6.000000
+----2 / 109-----
+batch loss: 0.000000
+batch yaw loss: 10.000000
+----3 / 109-----
+batch loss: 0.754169
+batch yaw loss: 10.000000
+----4 / 109-----
+batch loss: 2.278793
+batch yaw loss: 58.500000
+----5 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----6 / 109-----
+batch loss: 0.000000
+batch yaw loss: 7.000000
+----7 / 109-----
+batch loss: 17.000000
+batch yaw loss: 2.500000
+----8 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----9 / 109-----
+batch loss: 5.390272
+batch yaw loss: 1.000000
+----10 / 109-----
+batch loss: 10.330109
+batch yaw loss: 70.500000
+----11 / 109-----
+batch loss: 0.021724
+batch yaw loss: 0.500000
+----12 / 109-----
+batch loss: 18.689674
+batch yaw loss: 0.500000
+----13 / 109-----
+batch loss: 0.439519
+batch yaw loss: 0.000000
+----14 / 109-----
+batch loss: 3.153084
+batch yaw loss: 8.500000
+----15 / 109-----
+batch loss: 0.000000
+batch yaw loss: 46.500000
+----16 / 109-----
+batch loss: 6.332825
+batch yaw loss: 19.000000
+----17 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.500000
+----18 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----19 / 109-----
+batch loss: 0.000000
+batch yaw loss: 11.000000
+----20 / 109-----
+batch loss: 16.255482
+batch yaw loss: 23.000000
+----21 / 109-----
+batch loss: 2.062338
+batch yaw loss: 0.500000
+----22 / 109-----
+batch loss: 0.658508
+batch yaw loss: 2.000000
+----23 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----24 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----25 / 109-----
+batch loss: 26.542873
+batch yaw loss: 10.500000
+----26 / 109-----
+batch loss: 0.537016
+batch yaw loss: 3.000000
+----27 / 109-----
+batch loss: 0.000000
+batch yaw loss: 38.000000
+----28 / 109-----
+batch loss: 0.000000
+batch yaw loss: 58.000000
+----29 / 109-----
+batch loss: 1.224028
+batch yaw loss: 4.500000
+----30 / 109-----
+batch loss: 0.815327
+batch yaw loss: 8.000000
+----31 / 109-----
+batch loss: 11.684334
+batch yaw loss: 0.500000
+----32 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----33 / 109-----
+batch loss: 0.272766
+batch yaw loss: 32.000000
+----34 / 109-----
+batch loss: 2.759748
+batch yaw loss: 2.000000
+----35 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----36 / 109-----
+batch loss: 0.000000
+batch yaw loss: 45.500000
+----37 / 109-----
+batch loss: 9.176895
+batch yaw loss: 0.500000
+----38-----
+----FAULTY TUPLE-----
+----39 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----40 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----41 / 109-----
+batch loss: 9.280746
+batch yaw loss: 2.500000
+----42 / 109-----
+batch loss: 1.060616
+batch yaw loss: 1.000000
+----43 / 109-----
+batch loss: 5.281284
+batch yaw loss: 36.500000
+----44 / 109-----
+batch loss: 2.165333
+batch yaw loss: 0.000000
+----45 / 109-----
+batch loss: 9.040142
+batch yaw loss: 1.000000
+----46 / 109-----
+batch loss: 1.836159
+batch yaw loss: 0.000000
+----47 / 109-----
+batch loss: 0.511276
+batch yaw loss: 29.500000
+----48 / 109-----
+batch loss: 0.000000
+batch yaw loss: 23.500000
+----49 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----50 / 109-----
+batch loss: 10.367519
+batch yaw loss: 6.500000
+----51 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----52 / 109-----
+batch loss: 3.484764
+batch yaw loss: 0.500000
+----53 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----54 / 109-----
+batch loss: 2.814022
+batch yaw loss: 0.500000
+----55 / 109-----
+batch loss: 0.317731
+batch yaw loss: 0.000000
+----56 / 109-----
+batch loss: 1.061142
+batch yaw loss: 27.500000
+----57 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----58 / 109-----
+batch loss: 1.761227
+batch yaw loss: 2.500000
+----59 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----60-----
+----FAULTY TUPLE-----
+----61 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----62 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----63 / 109-----
+batch loss: 10.541023
+batch yaw loss: 21.500000
+----64 / 109-----
+batch loss: 0.587627
+batch yaw loss: 2.000000
+----65 / 109-----
+batch loss: 0.236570
+batch yaw loss: 0.000000
+----66 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.500000
+----67 / 109-----
+batch loss: 0.437737
+batch yaw loss: 13.500000
+----68 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----69 / 109-----
+batch loss: 0.070988
+batch yaw loss: 1.000000
+----70 / 109-----
+batch loss: 1.169777
+batch yaw loss: 2.000000
+----71 / 109-----
+batch loss: 0.000000
+batch yaw loss: 18.500000
+----72 / 109-----
+batch loss: 0.000000
+batch yaw loss: 38.000000
+----73 / 109-----
+batch loss: 0.700661
+batch yaw loss: 9.000000
+----74 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----75 / 109-----
+batch loss: 5.360924
+batch yaw loss: 3.000000
+----76 / 109-----
+batch loss: 10.672361
+batch yaw loss: 1.000000
+----77 / 109-----
+batch loss: 3.465767
+batch yaw loss: 31.000000
+----78 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----79 / 109-----
+batch loss: 0.000000
+batch yaw loss: 17.500000
+----80 / 109-----
+batch loss: 4.979485
+batch yaw loss: 13.500000
+----81 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----82 / 109-----
+batch loss: 0.713468
+batch yaw loss: 1.000000
+----83 / 109-----
+batch loss: 15.430937
+batch yaw loss: 4.500000
+----84 / 109-----
+batch loss: 9.850319
+batch yaw loss: 49.500000
+----85 / 109-----
+batch loss: 11.953602
+batch yaw loss: 21.500000
+----86 / 109-----
+batch loss: 2.743298
+batch yaw loss: 41.500000
+----87 / 109-----
+batch loss: 0.529926
+batch yaw loss: 4.500000
+----88 / 109-----
+batch loss: 0.000000
+batch yaw loss: 36.500000
+----89 / 109-----
+batch loss: 2.046343
+batch yaw loss: 1.000000
+----90 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----91 / 109-----
+batch loss: 13.080254
+batch yaw loss: 0.000000
+----92 / 109-----
+batch loss: 22.781715
+batch yaw loss: 23.500000
+----93 / 109-----
+batch loss: 0.347759
+batch yaw loss: 1.500000
+----94 / 109-----
+batch loss: 0.000000
+batch yaw loss: 32.000000
+----95 / 109-----
+batch loss: 5.655033
+batch yaw loss: 1.500000
+----96 / 109-----
+batch loss: 0.000000
+batch yaw loss: 30.500000
+----97 / 109-----
+batch loss: 0.000000
+batch yaw loss: 28.000000
+----98 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----99 / 109-----
+batch loss: 8.919777
+batch yaw loss: 1.000000
+----100 / 109-----
+batch loss: 8.221287
+batch yaw loss: 59.000000
+----101 / 109-----
+batch loss: 0.000000
+batch yaw loss: 10.500000
+----102 / 109-----
+batch loss: 1.740784
+batch yaw loss: 0.500000
+----103 / 109-----
+batch loss: 1.913883
+batch yaw loss: 1.000000
+----104 / 109-----
+batch loss: 1.222108
+batch yaw loss: 0.000000
+----105 / 109-----
+batch loss: 0.483128
+batch yaw loss: 3.000000
+----106 / 109-----
+batch loss: 0.637947
+batch yaw loss: 1.500000
+----107 / 109-----
+batch loss: 0.658409
+batch yaw loss: 1.000000
+----108 / 109-----
+batch loss: 9.709480
+batch yaw loss: 1.000000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 013/ 20 ****
+----0 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.000000
+----1 / 109-----
+batch loss: 0.125679
+batch yaw loss: 1.000000
+----2 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----3 / 109-----
+batch loss: 1.025146
+batch yaw loss: 1.500000
+----4 / 109-----
+batch loss: 5.292400
+batch yaw loss: 45.000000
+----5 / 109-----
+batch loss: 11.919411
+batch yaw loss: 5.500000
+----6 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----7 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----8 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----9 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----10 / 109-----
+batch loss: 0.272438
+batch yaw loss: 1.000000
+----11 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----12 / 109-----
+batch loss: 0.454338
+batch yaw loss: 33.000000
+----13 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----14 / 109-----
+batch loss: 9.613103
+batch yaw loss: 0.500000
+----15 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.000000
+----16 / 109-----
+batch loss: 8.668163
+batch yaw loss: 1.000000
+----17 / 109-----
+batch loss: 0.000000
+batch yaw loss: 32.500000
+----18 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----19 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----20 / 109-----
+batch loss: 0.080081
+batch yaw loss: 0.500000
+----21 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----22 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----23 / 109-----
+batch loss: 0.316740
+batch yaw loss: 25.500000
+----24-----
+----FAULTY TUPLE-----
+----25 / 109-----
+batch loss: 1.423018
+batch yaw loss: 0.500000
+----26 / 109-----
+batch loss: 6.389932
+batch yaw loss: 0.000000
+----27 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----28 / 109-----
+batch loss: 0.000000
+batch yaw loss: 32.000000
+----29 / 109-----
+batch loss: 0.000000
+batch yaw loss: 32.000000
+----30 / 109-----
+batch loss: 0.000000
+batch yaw loss: 23.000000
+----31 / 109-----
+batch loss: 0.657814
+batch yaw loss: 9.500000
+----32 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----33 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----34 / 109-----
+batch loss: 13.499825
+batch yaw loss: 50.500000
+----35 / 109-----
+batch loss: 0.000000
+batch yaw loss: 80.000000
+----36 / 109-----
+batch loss: 1.613026
+batch yaw loss: 1.000000
+----37 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----38 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----39 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.000000
+----40 / 109-----
+batch loss: 9.923965
+batch yaw loss: 1.000000
+----41 / 109-----
+batch loss: 9.097290
+batch yaw loss: 5.000000
+----42 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----43 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----44 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.000000
+----45 / 109-----
+batch loss: 0.000000
+batch yaw loss: 7.000000
+----46 / 109-----
+batch loss: 11.089432
+batch yaw loss: 4.000000
+----47 / 109-----
+batch loss: 2.137394
+batch yaw loss: 2.000000
+----48 / 109-----
+batch loss: 0.233601
+batch yaw loss: 3.000000
+----49 / 109-----
+batch loss: 0.872932
+batch yaw loss: 2.500000
+----50 / 109-----
+batch loss: 10.552692
+batch yaw loss: 2.500000
+----51 / 109-----
+batch loss: 9.396202
+batch yaw loss: 21.000000
+----52 / 109-----
+batch loss: 0.140686
+batch yaw loss: 35.500000
+----53 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----54 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----55 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----56 / 109-----
+batch loss: 0.037804
+batch yaw loss: 1.000000
+----57 / 109-----
+batch loss: 8.446432
+batch yaw loss: 0.000000
+----58 / 109-----
+batch loss: 7.176641
+batch yaw loss: 2.500000
+----59 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----60 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----61 / 109-----
+batch loss: 8.397194
+batch yaw loss: 56.000000
+----62 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----63 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----64 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----65 / 109-----
+batch loss: 2.676159
+batch yaw loss: 2.000000
+----66 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----67 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----68 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----69 / 109-----
+batch loss: 10.279217
+batch yaw loss: 0.500000
+----70 / 109-----
+batch loss: 20.873051
+batch yaw loss: 20.000000
+----71 / 109-----
+batch loss: 0.067078
+batch yaw loss: 1.000000
+----72 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----73 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----74 / 109-----
+batch loss: 10.558033
+batch yaw loss: 0.500000
+----75 / 109-----
+batch loss: 8.871597
+batch yaw loss: 7.500000
+----76 / 109-----
+batch loss: 11.629349
+batch yaw loss: 92.500000
+----77 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----78 / 109-----
+batch loss: 1.799416
+batch yaw loss: 2.500000
+----79 / 109-----
+batch loss: 8.039665
+batch yaw loss: 1.000000
+----80 / 109-----
+batch loss: 0.825302
+batch yaw loss: 5.500000
+----81 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----82 / 109-----
+batch loss: 4.567858
+batch yaw loss: 1.500000
+----83 / 109-----
+batch loss: 0.000000
+batch yaw loss: 19.500000
+----84 / 109-----
+batch loss: 1.459560
+batch yaw loss: 7.000000
+----85 / 109-----
+batch loss: 12.598095
+batch yaw loss: 1.000000
+----86 / 109-----
+batch loss: 0.638615
+batch yaw loss: 21.500000
+----87 / 109-----
+batch loss: 6.856476
+batch yaw loss: 51.000000
+----88 / 109-----
+batch loss: 0.164410
+batch yaw loss: 3.500000
+----89 / 109-----
+batch loss: 9.518642
+batch yaw loss: 3.000000
+----90 / 109-----
+batch loss: 10.727554
+batch yaw loss: 2.000000
+----91 / 109-----
+batch loss: 2.476372
+batch yaw loss: 1.000000
+----92 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----93 / 109-----
+batch loss: 0.000000
+batch yaw loss: 32.500000
+----94 / 109-----
+batch loss: 4.329469
+batch yaw loss: 0.500000
+----95 / 109-----
+batch loss: 0.000000
+batch yaw loss: 20.500000
+----96 / 109-----
+batch loss: 0.271695
+batch yaw loss: 0.500000
+----97-----
+----FAULTY TUPLE-----
+----98 / 109-----
+batch loss: 3.512321
+batch yaw loss: 36.500000
+----99 / 109-----
+batch loss: 0.224816
+batch yaw loss: 1.000000
+----100 / 109-----
+batch loss: 0.000000
+batch yaw loss: 33.000000
+----101 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----102 / 109-----
+batch loss: 13.680763
+batch yaw loss: 2.500000
+----103 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----104 / 109-----
+batch loss: 1.862209
+batch yaw loss: 6.000000
+----105 / 109-----
+batch loss: 12.416359
+batch yaw loss: 1.000000
+----106 / 109-----
+batch loss: 9.695747
+batch yaw loss: 19.500000
+----107 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----108 / 109-----
+batch loss: 8.327451
+batch yaw loss: 0.500000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 014/ 20 ****
+----0 / 109-----
+batch loss: 0.121761
+batch yaw loss: 2.000000
+----1 / 109-----
+batch loss: 0.590900
+batch yaw loss: 0.500000
+----2 / 109-----
+batch loss: 0.000000
+batch yaw loss: 81.500000
+----3 / 109-----
+batch loss: 0.015507
+batch yaw loss: 1.500000
+----4 / 109-----
+batch loss: 0.117973
+batch yaw loss: 73.500000
+----5 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----6 / 109-----
+batch loss: 3.719385
+batch yaw loss: 1.500000
+----7 / 109-----
+batch loss: 10.832726
+batch yaw loss: 3.000000
+----8 / 109-----
+batch loss: 0.284424
+batch yaw loss: 32.000000
+----9 / 109-----
+batch loss: 0.027218
+batch yaw loss: 1.500000
+----10 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----11 / 109-----
+batch loss: 4.256393
+batch yaw loss: 1.000000
+----12 / 109-----
+batch loss: 4.015961
+batch yaw loss: 13.000000
+----13 / 109-----
+batch loss: 8.618484
+batch yaw loss: 1.500000
+----14 / 109-----
+batch loss: 5.947542
+batch yaw loss: 27.500000
+----15 / 109-----
+batch loss: 0.256838
+batch yaw loss: 1.000000
+----16 / 109-----
+batch loss: 3.122421
+batch yaw loss: 0.500000
+----17 / 109-----
+batch loss: 0.000000
+batch yaw loss: 32.000000
+----18 / 109-----
+batch loss: 2.832497
+batch yaw loss: 16.000000
+----19 / 109-----
+batch loss: 1.286098
+batch yaw loss: 70.000000
+----20 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----21 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----22 / 109-----
+batch loss: 0.630640
+batch yaw loss: 1.500000
+----23 / 109-----
+batch loss: 2.952038
+batch yaw loss: 15.500000
+----24 / 109-----
+batch loss: 0.000000
+batch yaw loss: 7.500000
+----25 / 109-----
+batch loss: 3.375908
+batch yaw loss: 17.000000
+----26 / 109-----
+batch loss: 14.683178
+batch yaw loss: 8.500000
+----27 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----28-----
+----FAULTY TUPLE-----
+----29 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----30 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----31 / 109-----
+batch loss: 2.317267
+batch yaw loss: 0.000000
+----32 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----33 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.500000
+----34 / 109-----
+batch loss: 0.415848
+batch yaw loss: 32.500000
+----35 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----36 / 109-----
+batch loss: 0.000000
+batch yaw loss: 59.500000
+----37 / 109-----
+batch loss: 0.545519
+batch yaw loss: 0.000000
+----38 / 109-----
+batch loss: 0.000000
+batch yaw loss: 7.500000
+----39 / 109-----
+batch loss: 9.245649
+batch yaw loss: 1.500000
+----40 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----41 / 109-----
+batch loss: 0.408630
+batch yaw loss: 2.500000
+----42 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.500000
+----43 / 109-----
+batch loss: 0.456360
+batch yaw loss: 1.000000
+----44 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----45 / 109-----
+batch loss: 0.074566
+batch yaw loss: 1.000000
+----46 / 109-----
+batch loss: 0.510677
+batch yaw loss: 2.000000
+----47 / 109-----
+batch loss: 1.598746
+batch yaw loss: 0.500000
+----48 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----49 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.000000
+----50 / 109-----
+batch loss: 0.306858
+batch yaw loss: 77.500000
+----51 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----52 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----53 / 109-----
+batch loss: 0.785233
+batch yaw loss: 0.500000
+----54 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----55 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----56 / 109-----
+batch loss: 9.021049
+batch yaw loss: 1.000000
+----57 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----58 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----59 / 109-----
+batch loss: 0.097481
+batch yaw loss: 3.500000
+----60 / 109-----
+batch loss: 3.320343
+batch yaw loss: 3.000000
+----61 / 109-----
+batch loss: 0.822552
+batch yaw loss: 4.000000
+----62 / 109-----
+batch loss: 0.498816
+batch yaw loss: 0.000000
+----63 / 109-----
+batch loss: 9.871178
+batch yaw loss: 12.500000
+----64 / 109-----
+batch loss: 2.793243
+batch yaw loss: 43.500000
+----65 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----66 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----67 / 109-----
+batch loss: 0.285078
+batch yaw loss: 6.500000
+----68 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----69 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----70 / 109-----
+batch loss: 0.363792
+batch yaw loss: 81.500000
+----71 / 109-----
+batch loss: 0.000000
+batch yaw loss: 14.500000
+----72 / 109-----
+batch loss: 1.030685
+batch yaw loss: 26.500000
+----73 / 109-----
+batch loss: 8.955578
+batch yaw loss: 1.000000
+----74 / 109-----
+batch loss: 0.780472
+batch yaw loss: 10.500000
+----75 / 109-----
+batch loss: 0.243225
+batch yaw loss: 118.500000
+----76 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----77 / 109-----
+batch loss: 11.766098
+batch yaw loss: 29.000000
+----78 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----79 / 109-----
+batch loss: 3.576090
+batch yaw loss: 2.000000
+----80 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.000000
+----81 / 109-----
+batch loss: 0.446514
+batch yaw loss: 1.000000
+----82 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----83 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----84 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----85 / 109-----
+batch loss: 0.000000
+batch yaw loss: 34.500000
+----86 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----87 / 109-----
+batch loss: 0.867855
+batch yaw loss: 0.500000
+----88 / 109-----
+batch loss: 0.008713
+batch yaw loss: 2.500000
+----89 / 109-----
+batch loss: 0.000000
+batch yaw loss: 28.000000
+----90 / 109-----
+batch loss: 2.565170
+batch yaw loss: 1.000000
+----91 / 109-----
+batch loss: 0.742794
+batch yaw loss: 35.500000
+----92 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----93 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----94 / 109-----
+batch loss: 0.595993
+batch yaw loss: 0.500000
+----95 / 109-----
+batch loss: 9.047846
+batch yaw loss: 5.500000
+----96 / 109-----
+batch loss: 0.086258
+batch yaw loss: 2.000000
+----97 / 109-----
+batch loss: 0.574134
+batch yaw loss: 1.000000
+----98 / 109-----
+batch loss: 6.237282
+batch yaw loss: 38.500000
+----99 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----100 / 109-----
+batch loss: 2.811600
+batch yaw loss: 38.500000
+----101-----
+----FAULTY TUPLE-----
+----102 / 109-----
+batch loss: 2.892277
+batch yaw loss: 53.000000
+----103 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----104 / 109-----
+batch loss: 2.301163
+batch yaw loss: 0.500000
+----105 / 109-----
+batch loss: 2.282295
+batch yaw loss: 0.500000
+----106 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----107 / 109-----
+batch loss: 8.794434
+batch yaw loss: 1.500000
+----108 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 015/ 20 ****
+----0 / 109-----
+batch loss: 2.346901
+batch yaw loss: 3.000000
+----1 / 109-----
+batch loss: 7.376953
+batch yaw loss: 1.000000
+----2 / 109-----
+batch loss: 0.633911
+batch yaw loss: 1.000000
+----3 / 109-----
+batch loss: 0.000000
+batch yaw loss: 51.000000
+----4 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----5 / 109-----
+batch loss: 1.530899
+batch yaw loss: 1.000000
+----6 / 109-----
+batch loss: 0.393349
+batch yaw loss: 1.000000
+----7 / 109-----
+batch loss: 3.638245
+batch yaw loss: 9.500000
+----8 / 109-----
+batch loss: 0.000000
+batch yaw loss: 33.500000
+----9 / 109-----
+batch loss: 0.000000
+batch yaw loss: 91.500000
+----10 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----11 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----12 / 109-----
+batch loss: 0.706627
+batch yaw loss: 1.500000
+----13 / 109-----
+batch loss: 0.552971
+batch yaw loss: 19.500000
+----14 / 109-----
+batch loss: 6.892540
+batch yaw loss: 19.000000
+----15 / 109-----
+batch loss: 10.626090
+batch yaw loss: 0.000000
+----16 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----17 / 109-----
+batch loss: 8.957176
+batch yaw loss: 57.500000
+----18 / 109-----
+batch loss: 0.166225
+batch yaw loss: 1.500000
+----19 / 109-----
+batch loss: 1.850067
+batch yaw loss: 6.000000
+----20-----
+----FAULTY TUPLE-----
+----21 / 109-----
+batch loss: 0.939053
+batch yaw loss: 1.000000
+----22 / 109-----
+batch loss: 1.020710
+batch yaw loss: 1.000000
+----23 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----24 / 109-----
+batch loss: 13.001911
+batch yaw loss: 2.500000
+----25 / 109-----
+batch loss: 2.257750
+batch yaw loss: 0.500000
+----26 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----27 / 109-----
+batch loss: 0.000000
+batch yaw loss: 12.500000
+----28 / 109-----
+batch loss: 3.632639
+batch yaw loss: 1.500000
+----29 / 109-----
+batch loss: 10.737122
+batch yaw loss: 48.500000
+----30 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----31 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----32 / 109-----
+batch loss: 0.404259
+batch yaw loss: 1.000000
+----33 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----34 / 109-----
+batch loss: 0.018738
+batch yaw loss: 4.000000
+----35 / 109-----
+batch loss: 9.724609
+batch yaw loss: 60.000000
+----36 / 109-----
+batch loss: 0.089203
+batch yaw loss: 2.000000
+----37 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----38 / 109-----
+batch loss: 0.642592
+batch yaw loss: 32.500000
+----39 / 109-----
+batch loss: 8.394264
+batch yaw loss: 0.500000
+----40 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----41 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.500000
+----42 / 109-----
+batch loss: 8.024151
+batch yaw loss: 0.500000
+----43 / 109-----
+batch loss: 3.817158
+batch yaw loss: 18.500000
+----44 / 109-----
+batch loss: 0.042089
+batch yaw loss: 1.500000
+----45 / 109-----
+batch loss: 9.431864
+batch yaw loss: 0.000000
+----46 / 109-----
+batch loss: 2.938764
+batch yaw loss: 0.000000
+----47 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----48 / 109-----
+batch loss: 6.364933
+batch yaw loss: 0.500000
+----49 / 109-----
+batch loss: 1.607029
+batch yaw loss: 0.500000
+----50 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----51 / 109-----
+batch loss: 0.503227
+batch yaw loss: 5.500000
+----52 / 109-----
+batch loss: 1.859749
+batch yaw loss: 31.500000
+----53 / 109-----
+batch loss: 10.355209
+batch yaw loss: 1.000000
+----54 / 109-----
+batch loss: 26.575130
+batch yaw loss: 4.000000
+----55 / 109-----
+batch loss: 0.000000
+batch yaw loss: 14.000000
+----56 / 109-----
+batch loss: 1.058378
+batch yaw loss: 6.000000
+----57 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----58 / 109-----
+batch loss: 0.664696
+batch yaw loss: 48.000000
+----59 / 109-----
+batch loss: 7.746387
+batch yaw loss: 5.500000
+----60 / 109-----
+batch loss: 2.017971
+batch yaw loss: 35.500000
+----61-----
+----FAULTY TUPLE-----
+----62 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----63 / 109-----
+batch loss: 5.801979
+batch yaw loss: 14.500000
+----64 / 109-----
+batch loss: 0.347809
+batch yaw loss: 13.000000
+----65 / 109-----
+batch loss: 10.966522
+batch yaw loss: 58.500000
+----66 / 109-----
+batch loss: 10.943213
+batch yaw loss: 0.500000
+----67 / 109-----
+batch loss: 5.711801
+batch yaw loss: 0.000000
+----68 / 109-----
+batch loss: 0.234726
+batch yaw loss: 22.500000
+----69 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----70 / 109-----
+batch loss: 9.613685
+batch yaw loss: 1.500000
+----71 / 109-----
+batch loss: 0.000000
+batch yaw loss: 74.500000
+----72 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----73 / 109-----
+batch loss: 3.517387
+batch yaw loss: 9.500000
+----74 / 109-----
+batch loss: 1.843658
+batch yaw loss: 42.000000
+----75 / 109-----
+batch loss: 8.597919
+batch yaw loss: 1.500000
+----76 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----77 / 109-----
+batch loss: 0.209358
+batch yaw loss: 8.000000
+----78 / 109-----
+batch loss: 7.961998
+batch yaw loss: 1.500000
+----79 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----80 / 109-----
+batch loss: 0.754961
+batch yaw loss: 26.000000
+----81 / 109-----
+batch loss: 0.677147
+batch yaw loss: 2.000000
+----82 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----83 / 109-----
+batch loss: 1.238548
+batch yaw loss: 0.500000
+----84 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.000000
+----85 / 109-----
+batch loss: 1.399897
+batch yaw loss: 1.500000
+----86 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----87 / 109-----
+batch loss: 0.000000
+batch yaw loss: 26.500000
+----88 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----89 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----90 / 109-----
+batch loss: 3.640121
+batch yaw loss: 29.000000
+----91 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----92 / 109-----
+batch loss: 7.137297
+batch yaw loss: 0.500000
+----93 / 109-----
+batch loss: 0.000000
+batch yaw loss: 59.500000
+----94 / 109-----
+batch loss: 2.146996
+batch yaw loss: 8.000000
+----95 / 109-----
+batch loss: 12.723709
+batch yaw loss: 8.000000
+----96 / 109-----
+batch loss: 0.515526
+batch yaw loss: 1.500000
+----97 / 109-----
+batch loss: 1.500181
+batch yaw loss: 29.500000
+----98 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----99 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.500000
+----100 / 109-----
+batch loss: 3.858170
+batch yaw loss: 46.000000
+----101 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----102 / 109-----
+batch loss: 0.207679
+batch yaw loss: 3.500000
+----103 / 109-----
+batch loss: 0.000000
+batch yaw loss: 10.500000
+----104 / 109-----
+batch loss: 1.051373
+batch yaw loss: 31.000000
+----105 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----106 / 109-----
+batch loss: 2.681044
+batch yaw loss: 7.000000
+----107 / 109-----
+batch loss: 9.760644
+batch yaw loss: 0.000000
+----108 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 016/ 20 ****
+----0 / 109-----
+batch loss: 1.577312
+batch yaw loss: 2.000000
+----1 / 109-----
+batch loss: 0.042393
+batch yaw loss: 1.000000
+----2 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----3 / 109-----
+batch loss: 0.111737
+batch yaw loss: 4.000000
+----4 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----5 / 109-----
+batch loss: 0.255394
+batch yaw loss: 24.000000
+----6 / 109-----
+batch loss: 1.323395
+batch yaw loss: 2.000000
+----7 / 109-----
+batch loss: 0.000000
+batch yaw loss: 86.500000
+----8 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----9 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----10 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.500000
+----11 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----12 / 109-----
+batch loss: 0.056198
+batch yaw loss: 100.000000
+----13 / 109-----
+batch loss: 10.347149
+batch yaw loss: 11.000000
+----14 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----15 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----16 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----17 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----18 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----19 / 109-----
+batch loss: 0.725624
+batch yaw loss: 31.000000
+----20 / 109-----
+batch loss: 1.425758
+batch yaw loss: 4.500000
+----21 / 109-----
+batch loss: 0.000000
+batch yaw loss: 28.000000
+----22-----
+----FAULTY TUPLE-----
+----23 / 109-----
+batch loss: 0.142689
+batch yaw loss: 2.000000
+----24 / 109-----
+batch loss: 0.000000
+batch yaw loss: 39.500000
+----25 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----26 / 109-----
+batch loss: 0.072746
+batch yaw loss: 1.500000
+----27 / 109-----
+batch loss: 0.000000
+batch yaw loss: 41.500000
+----28 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.500000
+----29 / 109-----
+batch loss: 2.917351
+batch yaw loss: 74.500000
+----30 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----31 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----32 / 109-----
+batch loss: 7.224667
+batch yaw loss: 0.000000
+----33 / 109-----
+batch loss: 0.103458
+batch yaw loss: 1.000000
+----34 / 109-----
+batch loss: 10.110372
+batch yaw loss: 0.500000
+----35 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----36 / 109-----
+batch loss: 0.234159
+batch yaw loss: 0.500000
+----37 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----38 / 109-----
+batch loss: 0.000000
+batch yaw loss: 7.500000
+----39 / 109-----
+batch loss: 0.000000
+batch yaw loss: 21.000000
+----40 / 109-----
+batch loss: 5.078934
+batch yaw loss: 2.000000
+----41 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----42 / 109-----
+batch loss: 14.478020
+batch yaw loss: 4.000000
+----43 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----44 / 109-----
+batch loss: 16.947803
+batch yaw loss: 0.000000
+----45 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----46 / 109-----
+batch loss: 1.107197
+batch yaw loss: 17.000000
+----47 / 109-----
+batch loss: 3.547348
+batch yaw loss: 1.000000
+----48 / 109-----
+batch loss: 0.431625
+batch yaw loss: 31.500000
+----49 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----50 / 109-----
+batch loss: 0.000000
+batch yaw loss: 12.500000
+----51 / 109-----
+batch loss: 8.848007
+batch yaw loss: 8.000000
+----52 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----53 / 109-----
+batch loss: 1.204411
+batch yaw loss: 9.500000
+----54 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----55 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----56 / 109-----
+batch loss: 2.230697
+batch yaw loss: 1.000000
+----57 / 109-----
+batch loss: 6.836555
+batch yaw loss: 2.000000
+----58 / 109-----
+batch loss: 5.301353
+batch yaw loss: 4.000000
+----59 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----60 / 109-----
+batch loss: 0.434566
+batch yaw loss: 81.000000
+----61 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----62 / 109-----
+batch loss: 0.000000
+batch yaw loss: 56.000000
+----63 / 109-----
+batch loss: 8.091255
+batch yaw loss: 1.000000
+----64-----
+----FAULTY TUPLE-----
+----65 / 109-----
+batch loss: 3.203148
+batch yaw loss: 4.000000
+----66 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----67 / 109-----
+batch loss: 3.278358
+batch yaw loss: 31.500000
+----68 / 109-----
+batch loss: 0.000000
+batch yaw loss: 14.000000
+----69 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----70 / 109-----
+batch loss: 0.002143
+batch yaw loss: 1.000000
+----71 / 109-----
+batch loss: 1.972915
+batch yaw loss: 0.000000
+----72 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----73 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----74 / 109-----
+batch loss: 7.797470
+batch yaw loss: 1.000000
+----75 / 109-----
+batch loss: 0.000000
+batch yaw loss: 12.000000
+----76 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----77 / 109-----
+batch loss: 0.744677
+batch yaw loss: 0.500000
+----78 / 109-----
+batch loss: 0.296291
+batch yaw loss: 1.500000
+----79 / 109-----
+batch loss: 0.651021
+batch yaw loss: 0.500000
+----80 / 109-----
+batch loss: 8.050934
+batch yaw loss: 33.500000
+----81 / 109-----
+batch loss: 10.852242
+batch yaw loss: 74.500000
+----82 / 109-----
+batch loss: 3.301611
+batch yaw loss: 0.500000
+----83 / 109-----
+batch loss: 0.039326
+batch yaw loss: 2.000000
+----84 / 109-----
+batch loss: 1.795340
+batch yaw loss: 9.000000
+----85 / 109-----
+batch loss: 0.010096
+batch yaw loss: 0.000000
+----86 / 109-----
+batch loss: 0.000000
+batch yaw loss: 38.000000
+----87 / 109-----
+batch loss: 0.886509
+batch yaw loss: 1.000000
+----88 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----89 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----90 / 109-----
+batch loss: 5.138069
+batch yaw loss: 13.500000
+----91 / 109-----
+batch loss: 1.156452
+batch yaw loss: 7.500000
+----92 / 109-----
+batch loss: 6.151573
+batch yaw loss: 10.500000
+----93 / 109-----
+batch loss: 0.243410
+batch yaw loss: 16.000000
+----94 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----95 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.000000
+----96 / 109-----
+batch loss: 1.875206
+batch yaw loss: 1.500000
+----97 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----98 / 109-----
+batch loss: 0.279545
+batch yaw loss: 109.000000
+----99 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----100 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----101 / 109-----
+batch loss: 0.134949
+batch yaw loss: 3.500000
+----102 / 109-----
+batch loss: 0.035946
+batch yaw loss: 0.000000
+----103 / 109-----
+batch loss: 0.317097
+batch yaw loss: 22.000000
+----104 / 109-----
+batch loss: 0.652878
+batch yaw loss: 31.500000
+----105 / 109-----
+batch loss: 0.201234
+batch yaw loss: 3.000000
+----106 / 109-----
+batch loss: 2.958344
+batch yaw loss: 2.000000
+----107 / 109-----
+batch loss: 33.622910
+batch yaw loss: 30.000000
+----108 / 109-----
+batch loss: 0.821573
+batch yaw loss: 13.000000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 017/ 20 ****
+----0 / 109-----
+batch loss: 2.856331
+batch yaw loss: 55.500000
+----1 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.000000
+----2 / 109-----
+batch loss: 0.000000
+batch yaw loss: 11.000000
+----3 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----4 / 109-----
+batch loss: 0.778240
+batch yaw loss: 0.500000
+----5 / 109-----
+batch loss: 0.377091
+batch yaw loss: 1.500000
+----6 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----7 / 109-----
+batch loss: 0.472385
+batch yaw loss: 28.500000
+----8 / 109-----
+batch loss: 0.070938
+batch yaw loss: 9.500000
+----9 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----10 / 109-----
+batch loss: 0.778069
+batch yaw loss: 0.500000
+----11 / 109-----
+batch loss: 0.501560
+batch yaw loss: 0.500000
+----12 / 109-----
+batch loss: 4.045101
+batch yaw loss: 3.000000
+----13 / 109-----
+batch loss: 7.548416
+batch yaw loss: 0.500000
+----14 / 109-----
+batch loss: 0.410458
+batch yaw loss: 1.500000
+----15 / 109-----
+batch loss: 0.724972
+batch yaw loss: 42.000000
+----16 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----17 / 109-----
+batch loss: 0.000000
+batch yaw loss: 10.000000
+----18 / 109-----
+batch loss: 8.250843
+batch yaw loss: 0.500000
+----19 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----20 / 109-----
+batch loss: 11.688335
+batch yaw loss: 38.500000
+----21 / 109-----
+batch loss: 2.056777
+batch yaw loss: 0.500000
+----22 / 109-----
+batch loss: 0.000000
+batch yaw loss: 18.000000
+----23 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----24 / 109-----
+batch loss: 12.371922
+batch yaw loss: 1.000000
+----25 / 109-----
+batch loss: 8.518837
+batch yaw loss: 49.500000
+----26 / 109-----
+batch loss: 0.000000
+batch yaw loss: 34.500000
+----27 / 109-----
+batch loss: 5.840034
+batch yaw loss: 22.000000
+----28 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----29 / 109-----
+batch loss: 0.663078
+batch yaw loss: 7.000000
+----30 / 109-----
+batch loss: 0.026719
+batch yaw loss: 1.500000
+----31 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----32 / 109-----
+batch loss: 6.331512
+batch yaw loss: 35.500000
+----33 / 109-----
+batch loss: 1.489033
+batch yaw loss: 0.000000
+----34 / 109-----
+batch loss: 3.930655
+batch yaw loss: 0.000000
+----35 / 109-----
+batch loss: 2.905823
+batch yaw loss: 30.500000
+----36 / 109-----
+batch loss: 0.559345
+batch yaw loss: 38.500000
+----37 / 109-----
+batch loss: 0.000000
+batch yaw loss: 30.000000
+----38 / 109-----
+batch loss: 2.187698
+batch yaw loss: 29.500000
+----39 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.500000
+----40 / 109-----
+batch loss: 13.304810
+batch yaw loss: 47.000000
+----41 / 109-----
+batch loss: 10.180475
+batch yaw loss: 0.500000
+----42 / 109-----
+batch loss: 0.000000
+batch yaw loss: 13.000000
+----43 / 109-----
+batch loss: 0.232185
+batch yaw loss: 25.500000
+----44-----
+----FAULTY TUPLE-----
+----45 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.500000
+----46 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----47 / 109-----
+batch loss: 0.644760
+batch yaw loss: 2.000000
+----48 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----49 / 109-----
+batch loss: 9.458088
+batch yaw loss: 1.000000
+----50 / 109-----
+batch loss: 0.606186
+batch yaw loss: 2.500000
+----51 / 109-----
+batch loss: 0.000000
+batch yaw loss: 8.500000
+----52 / 109-----
+batch loss: 8.320152
+batch yaw loss: 9.000000
+----53 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----54 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.500000
+----55 / 109-----
+batch loss: 0.000000
+batch yaw loss: 28.000000
+----56 / 109-----
+batch loss: 0.038813
+batch yaw loss: 3.500000
+----57 / 109-----
+batch loss: 8.080223
+batch yaw loss: 1.000000
+----58 / 109-----
+batch loss: 3.836171
+batch yaw loss: 0.000000
+----59 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----60 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----61 / 109-----
+batch loss: 0.000000
+batch yaw loss: 6.000000
+----62 / 109-----
+batch loss: 9.024815
+batch yaw loss: 9.500000
+----63 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----64 / 109-----
+batch loss: 3.125805
+batch yaw loss: 8.000000
+----65 / 109-----
+batch loss: 14.106110
+batch yaw loss: 2.000000
+----66 / 109-----
+batch loss: 0.000000
+batch yaw loss: 27.000000
+----67 / 109-----
+batch loss: 0.000000
+batch yaw loss: 43.500000
+----68 / 109-----
+batch loss: 11.675339
+batch yaw loss: 8.000000
+----69 / 109-----
+batch loss: 1.213722
+batch yaw loss: 37.500000
+----70 / 109-----
+batch loss: 0.198116
+batch yaw loss: 10.000000
+----71 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----72 / 109-----
+batch loss: 10.766811
+batch yaw loss: 13.000000
+----73 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----74 / 109-----
+batch loss: 4.016769
+batch yaw loss: 50.000000
+----75 / 109-----
+batch loss: 14.829803
+batch yaw loss: 13.000000
+----76 / 109-----
+batch loss: 8.690453
+batch yaw loss: 7.000000
+----77 / 109-----
+batch loss: 0.270857
+batch yaw loss: 0.000000
+----78 / 109-----
+batch loss: 0.269896
+batch yaw loss: 0.500000
+----79 / 109-----
+batch loss: 0.000000
+batch yaw loss: 16.000000
+----80 / 109-----
+batch loss: 0.066052
+batch yaw loss: 0.000000
+----81 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----82 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----83 / 109-----
+batch loss: 0.000000
+batch yaw loss: 59.500000
+----84 / 109-----
+batch loss: 7.989266
+batch yaw loss: 0.000000
+----85 / 109-----
+batch loss: 4.358376
+batch yaw loss: 1.000000
+----86 / 109-----
+batch loss: 6.520290
+batch yaw loss: 0.500000
+----87 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----88 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.000000
+----89-----
+----FAULTY TUPLE-----
+----90 / 109-----
+batch loss: 0.584568
+batch yaw loss: 0.500000
+----91 / 109-----
+batch loss: 0.105077
+batch yaw loss: 14.000000
+----92 / 109-----
+batch loss: 0.687864
+batch yaw loss: 1.000000
+----93 / 109-----
+batch loss: 11.449234
+batch yaw loss: 2.500000
+----94 / 109-----
+batch loss: 0.000000
+batch yaw loss: 21.500000
+----95 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----96 / 109-----
+batch loss: 1.139679
+batch yaw loss: 1.000000
+----97 / 109-----
+batch loss: 9.112600
+batch yaw loss: 1.000000
+----98 / 109-----
+batch loss: 1.759907
+batch yaw loss: 1.500000
+----99 / 109-----
+batch loss: 0.534397
+batch yaw loss: 3.500000
+----100 / 109-----
+batch loss: 0.008068
+batch yaw loss: 2.000000
+----101 / 109-----
+batch loss: 0.275066
+batch yaw loss: 45.000000
+----102 / 109-----
+batch loss: 0.568813
+batch yaw loss: 20.500000
+----103 / 109-----
+batch loss: 7.720028
+batch yaw loss: 8.000000
+----104 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----105 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----106 / 109-----
+batch loss: 7.212891
+batch yaw loss: 7.000000
+----107 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----108 / 109-----
+batch loss: 1.344803
+batch yaw loss: 1.000000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 018/ 20 ****
+----0 / 109-----
+batch loss: 0.234256
+batch yaw loss: 0.000000
+----1 / 109-----
+batch loss: 0.000000
+batch yaw loss: 33.500000
+----2 / 109-----
+batch loss: 0.664885
+batch yaw loss: 0.500000
+----3 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----4 / 109-----
+batch loss: 0.919003
+batch yaw loss: 22.000000
+----5 / 109-----
+batch loss: 0.072373
+batch yaw loss: 0.500000
+----6 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----7 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----8 / 109-----
+batch loss: 0.000000
+batch yaw loss: 30.500000
+----9 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----10 / 109-----
+batch loss: 0.257847
+batch yaw loss: 2.000000
+----11 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----12 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----13 / 109-----
+batch loss: 0.855038
+batch yaw loss: 1.500000
+----14 / 109-----
+batch loss: 0.444931
+batch yaw loss: 27.000000
+----15 / 109-----
+batch loss: 8.392138
+batch yaw loss: 4.500000
+----16 / 109-----
+batch loss: 10.324637
+batch yaw loss: 19.500000
+----17 / 109-----
+batch loss: 7.611126
+batch yaw loss: 9.500000
+----18 / 109-----
+batch loss: 8.345901
+batch yaw loss: 43.000000
+----19 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----20 / 109-----
+batch loss: 0.418129
+batch yaw loss: 1.500000
+----21 / 109-----
+batch loss: 0.000000
+batch yaw loss: 37.500000
+----22 / 109-----
+batch loss: 3.004177
+batch yaw loss: 0.500000
+----23 / 109-----
+batch loss: 2.033239
+batch yaw loss: 44.500000
+----24 / 109-----
+batch loss: 1.857910
+batch yaw loss: 2.000000
+----25 / 109-----
+batch loss: 5.506538
+batch yaw loss: 25.500000
+----26 / 109-----
+batch loss: 1.561234
+batch yaw loss: 30.500000
+----27-----
+----FAULTY TUPLE-----
+----28 / 109-----
+batch loss: 1.850709
+batch yaw loss: 0.000000
+----29 / 109-----
+batch loss: 8.764690
+batch yaw loss: 0.000000
+----30 / 109-----
+batch loss: 0.000000
+batch yaw loss: 15.000000
+----31 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.500000
+----32 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----33 / 109-----
+batch loss: 0.599168
+batch yaw loss: 0.500000
+----34 / 109-----
+batch loss: 0.355476
+batch yaw loss: 23.500000
+----35 / 109-----
+batch loss: 0.454781
+batch yaw loss: 38.500000
+----36 / 109-----
+batch loss: 8.050575
+batch yaw loss: 1.000000
+----37 / 109-----
+batch loss: 1.310558
+batch yaw loss: 9.000000
+----38 / 109-----
+batch loss: 0.705793
+batch yaw loss: 1.500000
+----39 / 109-----
+batch loss: 1.804190
+batch yaw loss: 31.500000
+----40 / 109-----
+batch loss: 8.431904
+batch yaw loss: 59.500000
+----41 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----42 / 109-----
+batch loss: 8.324562
+batch yaw loss: 1.000000
+----43 / 109-----
+batch loss: 2.217454
+batch yaw loss: 0.500000
+----44 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----45 / 109-----
+batch loss: 1.384054
+batch yaw loss: 0.000000
+----46 / 109-----
+batch loss: 0.000000
+batch yaw loss: 36.000000
+----47 / 109-----
+batch loss: 6.975552
+batch yaw loss: 2.500000
+----48 / 109-----
+batch loss: 0.000000
+batch yaw loss: 65.500000
+----49-----
+----FAULTY TUPLE-----
+----50 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----51 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----52 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----53 / 109-----
+batch loss: 0.447285
+batch yaw loss: 1.000000
+----54 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----55 / 109-----
+batch loss: 3.482823
+batch yaw loss: 3.000000
+----56 / 109-----
+batch loss: 3.339136
+batch yaw loss: 0.000000
+----57 / 109-----
+batch loss: 3.231080
+batch yaw loss: 2.500000
+----58 / 109-----
+batch loss: 0.788652
+batch yaw loss: 3.500000
+----59 / 109-----
+batch loss: 0.000000
+batch yaw loss: 23.500000
+----60 / 109-----
+batch loss: 11.583504
+batch yaw loss: 1.000000
+----61 / 109-----
+batch loss: 7.269840
+batch yaw loss: 0.500000
+----62 / 109-----
+batch loss: 2.637825
+batch yaw loss: 13.000000
+----63 / 109-----
+batch loss: 2.301643
+batch yaw loss: 2.000000
+----64 / 109-----
+batch loss: 2.861294
+batch yaw loss: 69.500000
+----65 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----66 / 109-----
+batch loss: 7.413841
+batch yaw loss: 1.000000
+----67 / 109-----
+batch loss: 5.360006
+batch yaw loss: 1.000000
+----68 / 109-----
+batch loss: 3.192192
+batch yaw loss: 2.500000
+----69 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----70 / 109-----
+batch loss: 7.613646
+batch yaw loss: 0.500000
+----71 / 109-----
+batch loss: 1.532887
+batch yaw loss: 38.500000
+----72 / 109-----
+batch loss: 0.000000
+batch yaw loss: 60.500000
+----73 / 109-----
+batch loss: 0.142620
+batch yaw loss: 7.500000
+----74 / 109-----
+batch loss: 0.434437
+batch yaw loss: 0.500000
+----75 / 109-----
+batch loss: 8.447073
+batch yaw loss: 1.000000
+----76 / 109-----
+batch loss: 0.519955
+batch yaw loss: 0.500000
+----77 / 109-----
+batch loss: 1.412966
+batch yaw loss: 0.000000
+----78 / 109-----
+batch loss: 0.672459
+batch yaw loss: 21.500000
+----79 / 109-----
+batch loss: 0.312576
+batch yaw loss: 3.500000
+----80 / 109-----
+batch loss: 13.503693
+batch yaw loss: 53.500000
+----81 / 109-----
+batch loss: 1.701073
+batch yaw loss: 39.500000
+----82 / 109-----
+batch loss: 1.141494
+batch yaw loss: 0.500000
+----83 / 109-----
+batch loss: 0.000000
+batch yaw loss: 23.500000
+----84 / 109-----
+batch loss: 0.484392
+batch yaw loss: 0.500000
+----85 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----86 / 109-----
+batch loss: 7.938187
+batch yaw loss: 1.000000
+----87 / 109-----
+batch loss: 11.917358
+batch yaw loss: 0.500000
+----88 / 109-----
+batch loss: 10.083927
+batch yaw loss: 52.000000
+----89 / 109-----
+batch loss: 7.921120
+batch yaw loss: 2.000000
+----90 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----91 / 109-----
+batch loss: 0.000000
+batch yaw loss: 11.000000
+----92 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----93 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----94 / 109-----
+batch loss: 0.220113
+batch yaw loss: 38.000000
+----95 / 109-----
+batch loss: 1.863091
+batch yaw loss: 1.500000
+----96 / 109-----
+batch loss: 0.275812
+batch yaw loss: 3.500000
+----97 / 109-----
+batch loss: 13.244957
+batch yaw loss: 4.500000
+----98 / 109-----
+batch loss: 1.927834
+batch yaw loss: 14.500000
+----99 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----100 / 109-----
+batch loss: 1.115154
+batch yaw loss: 0.500000
+----101 / 109-----
+batch loss: 3.021988
+batch yaw loss: 24.500000
+----102 / 109-----
+batch loss: 5.913490
+batch yaw loss: 1.000000
+----103 / 109-----
+batch loss: 0.173576
+batch yaw loss: 5.000000
+----104 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----105 / 109-----
+batch loss: 0.964149
+batch yaw loss: 28.500000
+----106 / 109-----
+batch loss: 0.000000
+batch yaw loss: 42.500000
+----107 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----108 / 109-----
+batch loss: 0.398174
+batch yaw loss: 1.500000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
+**** EPOCH 019/ 20 ****
+----0 / 109-----
+batch loss: 0.854622
+batch yaw loss: 1.500000
+----1 / 109-----
+batch loss: 14.960530
+batch yaw loss: 0.500000
+----2 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----3 / 109-----
+batch loss: 3.193453
+batch yaw loss: 9.500000
+----4 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----5 / 109-----
+batch loss: 9.331709
+batch yaw loss: 5.000000
+----6 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.500000
+----7 / 109-----
+batch loss: 4.411507
+batch yaw loss: 2.500000
+----8 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----9 / 109-----
+batch loss: 4.106644
+batch yaw loss: 7.000000
+----10-----
+----FAULTY TUPLE-----
+----11 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----12 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----13 / 109-----
+batch loss: 3.972315
+batch yaw loss: 0.000000
+----14 / 109-----
+batch loss: 2.440796
+batch yaw loss: 27.500000
+----15 / 109-----
+batch loss: 0.000000
+batch yaw loss: 64.500000
+----16 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----17 / 109-----
+batch loss: 0.171989
+batch yaw loss: 4.500000
+----18 / 109-----
+batch loss: 5.013042
+batch yaw loss: 3.000000
+----19 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----20 / 109-----
+batch loss: 3.546839
+batch yaw loss: 1.500000
+----21 / 109-----
+batch loss: 9.228332
+batch yaw loss: 0.000000
+----22 / 109-----
+batch loss: 0.163692
+batch yaw loss: 22.500000
+----23 / 109-----
+batch loss: 0.628798
+batch yaw loss: 0.000000
+----24 / 109-----
+batch loss: 0.000000
+batch yaw loss: 63.000000
+----25 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----26 / 109-----
+batch loss: 8.265358
+batch yaw loss: 17.000000
+----27 / 109-----
+batch loss: 8.073893
+batch yaw loss: 0.500000
+----28 / 109-----
+batch loss: 16.019619
+batch yaw loss: 6.500000
+----29 / 109-----
+batch loss: 0.000000
+batch yaw loss: 24.000000
+----30 / 109-----
+batch loss: 6.574203
+batch yaw loss: 60.000000
+----31 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----32 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----33 / 109-----
+batch loss: 2.544090
+batch yaw loss: 1.500000
+----34 / 109-----
+batch loss: 1.923225
+batch yaw loss: 5.500000
+----35 / 109-----
+batch loss: 7.794144
+batch yaw loss: 68.000000
+----36 / 109-----
+batch loss: 0.710167
+batch yaw loss: 23.500000
+----37 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----38 / 109-----
+batch loss: 10.809673
+batch yaw loss: 39.500000
+----39 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----40 / 109-----
+batch loss: 1.812340
+batch yaw loss: 25.500000
+----41 / 109-----
+batch loss: 9.555466
+batch yaw loss: 6.500000
+----42 / 109-----
+batch loss: 0.246002
+batch yaw loss: 76.500000
+----43 / 109-----
+batch loss: 6.881340
+batch yaw loss: 3.500000
+----44 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----45 / 109-----
+batch loss: 1.189922
+batch yaw loss: 0.500000
+----46 / 109-----
+batch loss: 6.788620
+batch yaw loss: 4.500000
+----47 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.500000
+----48 / 109-----
+batch loss: 1.284786
+batch yaw loss: 44.500000
+----49 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.500000
+----50 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----51 / 109-----
+batch loss: 6.833361
+batch yaw loss: 1.500000
+----52 / 109-----
+batch loss: 14.221046
+batch yaw loss: 91.000000
+----53 / 109-----
+batch loss: 5.274353
+batch yaw loss: 4.500000
+----54 / 109-----
+batch loss: 0.000000
+batch yaw loss: 9.000000
+----55 / 109-----
+batch loss: 0.000000
+batch yaw loss: 11.000000
+----56 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----57 / 109-----
+batch loss: 0.000000
+batch yaw loss: 19.000000
+----58 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----59 / 109-----
+batch loss: 0.000000
+batch yaw loss: 1.000000
+----60 / 109-----
+batch loss: 7.749081
+batch yaw loss: 1.000000
+----61 / 109-----
+batch loss: 1.071058
+batch yaw loss: 2.000000
+----62 / 109-----
+batch loss: 6.697681
+batch yaw loss: 33.000000
+----63 / 109-----
+batch loss: 3.329899
+batch yaw loss: 2.000000
+----64 / 109-----
+batch loss: 0.000000
+batch yaw loss: 4.000000
+----65 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----66 / 109-----
+batch loss: 0.193895
+batch yaw loss: 0.500000
+----67 / 109-----
+batch loss: 0.253866
+batch yaw loss: 0.000000
+----68 / 109-----
+batch loss: 0.349583
+batch yaw loss: 2.000000
+----69 / 109-----
+batch loss: 1.346939
+batch yaw loss: 4.000000
+----70 / 109-----
+batch loss: 0.000000
+batch yaw loss: 20.500000
+----71 / 109-----
+batch loss: 1.033762
+batch yaw loss: 1.000000
+----72 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----73 / 109-----
+batch loss: 7.224579
+batch yaw loss: 0.500000
+----74 / 109-----
+batch loss: 0.000000
+batch yaw loss: 14.000000
+----75 / 109-----
+batch loss: 1.224522
+batch yaw loss: 21.500000
+----76 / 109-----
+batch loss: 0.158104
+batch yaw loss: 18.000000
+----77 / 109-----
+batch loss: 6.362226
+batch yaw loss: 0.000000
+----78 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.000000
+----79 / 109-----
+batch loss: 0.590870
+batch yaw loss: 4.000000
+----80 / 109-----
+batch loss: 0.000000
+batch yaw loss: 3.000000
+----81 / 109-----
+batch loss: 0.000000
+batch yaw loss: 28.500000
+----82 / 109-----
+batch loss: 0.187714
+batch yaw loss: 1.000000
+----83 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----84 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----85 / 109-----
+batch loss: 0.000000
+batch yaw loss: 34.000000
+----86 / 109-----
+batch loss: 2.997837
+batch yaw loss: 0.000000
+----87 / 109-----
+batch loss: 0.000000
+batch yaw loss: 75.500000
+----88-----
+----FAULTY TUPLE-----
+----89 / 109-----
+batch loss: 0.000000
+batch yaw loss: 5.000000
+----90 / 109-----
+batch loss: 16.590584
+batch yaw loss: 29.000000
+----91 / 109-----
+batch loss: 1.807091
+batch yaw loss: 4.000000
+----92 / 109-----
+batch loss: 1.833710
+batch yaw loss: 6.500000
+----93 / 109-----
+batch loss: 3.269798
+batch yaw loss: 2.500000
+----94 / 109-----
+batch loss: 0.000000
+batch yaw loss: 31.000000
+----95 / 109-----
+batch loss: 6.560932
+batch yaw loss: 3.500000
+----96 / 109-----
+batch loss: 0.804340
+batch yaw loss: 3.500000
+----97 / 109-----
+batch loss: 2.083698
+batch yaw loss: 25.500000
+----98 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----99 / 109-----
+batch loss: 0.555809
+batch yaw loss: 48.500000
+----100 / 109-----
+batch loss: 0.573151
+batch yaw loss: 4.500000
+----101 / 109-----
+batch loss: 0.426720
+batch yaw loss: 1.500000
+----102 / 109-----
+batch loss: 1.937180
+batch yaw loss: 0.000000
+----103 / 109-----
+batch loss: 0.000000
+batch yaw loss: 2.000000
+----104 / 109-----
+batch loss: 0.594320
+batch yaw loss: 12.500000
+----105 / 109-----
+batch loss: 3.897675
+batch yaw loss: 34.500000
+----106 / 109-----
+batch loss: 13.627197
+batch yaw loss: 1.000000
+----107 / 109-----
+batch loss: 0.000000
+batch yaw loss: 0.500000
+----108 / 109-----
+batch loss: 0.822571
+batch yaw loss: 20.000000
+EVALUATING...
+EVAL RECALL: 0.9803921568627451
